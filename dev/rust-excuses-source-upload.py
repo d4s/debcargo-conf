@@ -9,12 +9,26 @@ print("parsing excuses.yaml...", file=sys.stderr)
 with open("excuses.yaml") as fp:
     y = yaml.load(fp)
 
-excuses = {}
 for e in y["sources"]:
     package = e.get("source")
     if not package.startswith("rust-"):
         # We only care about rust packages
         continue
-    for e2 in e.get("excuses"):
-        if "Not built on buildd" in e2:
-            print("%s needs a source-only upload" % package)
+    policy_info = e.get("policy_info")
+    need_upload = False
+    temp_reasons = []
+    perm_reasons = []
+    for policy, value in policy_info.items():
+        if policy == "builtonbuildd" and value.get("verdict") == "REJECTED_PERMANENTLY":
+            need_upload = True
+        elif value.get("verdict") == "REJECTED_TEMPORARILY":
+            temp_reasons.append(policy)
+        elif value.get("verdict") == "REJECTED_PERMANENTLY":
+            perm_reasons.append(policy)
+
+    if need_upload:
+        print("%s needs a source-only upload" % package)
+        if len(temp_reasons) > 0:
+            print("\tother temporary reasons preventing migration: %s" % ",".join(set(temp_reasons)))
+        if len(perm_reasons) > 0:
+            print("\tother permanent reasons preventing migration: %s" % ",".join(set(perm_reasons)))

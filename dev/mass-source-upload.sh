@@ -6,7 +6,7 @@ BASE_DIR=$(pwd)
 
 if test ! -f LIST_UPLOAD.txt; then
 	echo "Could not find LIST_UPLOAD.txt"
-	echo "Run python3 dev/rust-excuses-source-upload.py > LIST_UPLOAD.txt"
+	echo "Run python3 dev/rust-excuses-source-upload.py | grep '^rust-' > LIST_UPLOAD.txt"
 	exit 1
 fi
 
