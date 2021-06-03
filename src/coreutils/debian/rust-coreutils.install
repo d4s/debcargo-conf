@@ -27,9 +27,9 @@ usr/local/bin/touch /bin/
 usr/local/bin/true /bin/
 usr/local/bin/uname /bin/
 #usr/local/bin/vdir /bin/
-usr/local/bin/hostname /bin/
-usr/local/bin/kill /bin/
-usr/local/bin/more /bin/
+#usr/local/bin/hostname /bin/
+#usr/local/bin/kill /bin/
+#usr/local/bin/more /bin/
 
 # GNU/Coreutils: Installed in /usr/bin/
 #usr/local/bin/[ usr/bin
@@ -110,5 +110,5 @@ usr/local/bin/whoami usr/bin
 usr/local/bin/yes usr/bin
 usr/local/bin/chroot usr/bin
 usr/local/bin/hashsum usr/bin
-usr/local/bin/uptime usr/bin
+#usr/local/bin/uptime usr/bin
 usr/local/bin/relpath usr/bin
