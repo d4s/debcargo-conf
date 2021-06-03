@@ -48,7 +48,15 @@ Recommends:
 Suggests:
  ${cargo:Suggests}
 Provides:
- ${cargo:Provides}
+ ${cargo:Provides},
+ coreutils (= 8.24-1),
+ mktemp,
+Conflicts:
+ coreutils,
+ mktemp
+Replaces:
+ coreutils,
+ mktemp
 Built-Using: ${cargo:Built-Using}
 XB-X-Cargo-Built-Using: ${cargo:X-Cargo-Built-Using}
 Description: Universal coreutils utils, written in Rust
