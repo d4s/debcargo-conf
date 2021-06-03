@@ -15,7 +15,7 @@ override_dh_auto_install:
 	CARGO_HOME=$(shell pwd)/debian/cargo_home DESTDIR=$(CURDIR)/debian/tmp/ make install PROFILE=release
 	for f in $(CURDIR)/debian/tmp/usr/local/bin/*; do \
 		filename=$$(basename $$f); \
-		help2man $$f > docs/rust-$$filename.1; \
+		help2man $$f > docs/$$filename.1; \
 	done
 	rm -f $(CURDIR)/debian/tmp/usr/local/man/man1/arch.1.gz
 
