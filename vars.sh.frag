@@ -81,9 +81,10 @@ if [ -z "$CRATE" ]; then
 fi
 
 run_debcargo() {
+	# run debcargo and log its output into debcargo.log
 	rm -rf "$BUILDDIR" "$(dirname "$BUILDDIR")/rust-${PKGNAME}_${REALVER:-$VER}"*.orig.tar.*
 	set +e
-	$DEBCARGO package --config "$PKGCFG" --directory "$BUILDDIR" "$@" "$CRATE" "${REALVER:-$VER}"
+	$DEBCARGO package --config "$PKGCFG" --directory "$BUILDDIR" "$@" "$CRATE" "${REALVER:-$VER}" | tee "${BUILDDIR%%/}/debcargo.log"
 	if [ $? -ne 0 ]; then
 		echo "Command failed. If the patches failed to apply, to rebase them, run":
 		echo "cd $BUILDDIR"
