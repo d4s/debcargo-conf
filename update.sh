@@ -51,6 +51,7 @@ if ! grep -q uploaders "$PKGCFG"; then
 fi
 
 run_debcargo
+check_or_add_tarball_hash
 git add -N "$PKGDIR"
 
 if ! git diff --quiet -- "$PKGDIR_REL"; then
