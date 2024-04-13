@@ -1,0 +1,16 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -45,12 +45,8 @@
+ features = ["derive"]
+ optional = true
+ 
+-[dependencies.document-features]
+-version = " 0.2.8"
+-optional = true
+-
+ [dependencies.mint]
+-version = "0.5.6"
++version = ">=0.5.5"
+ optional = true
+ 
+ [dependencies.serde]

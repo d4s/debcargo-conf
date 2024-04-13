@@ -1,0 +1,17 @@
+From: Maytham Alsudany <maytha8thedev@gmail.com>
+Forwarded: not-needed
+Description: lower MSRV
+ https://docs.rs/egui/0.26.2/egui/index.html states that the MSRV is 1.62.0
+ (even though the workspace is set to 1.72).
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+ 
+ [package]
+ edition = "2021"
+-rust-version = "1.72"
++rust-version = "1.62"
+ name = "emath"
+ version = "0.27.2"
+ authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
