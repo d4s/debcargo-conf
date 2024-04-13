@@ -1,0 +1,3 @@
+duplicate-font-file also in (fonts-hack) [usr/share/cargo/registry/epaint-0.27.2/fonts/Hack-Regular.ttf]
+executable-not-elf-or-script [usr/share/cargo/registry/epaint-0.27.2/fonts/UFL.txt]
+executable-not-elf-or-script [usr/share/cargo/registry/epaint-0.27.2/fonts/Ubuntu-Light.ttf]

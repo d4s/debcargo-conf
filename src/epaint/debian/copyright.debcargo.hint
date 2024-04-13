@@ -1,0 +1,49 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: epaint
+Upstream-Contact: Emil Ernerfeldt <emil.ernerfeldt@gmail.com>
+Source: https://github.com/emilk/egui/tree/master/crates/epaint
+
+Files: *
+Copyright: FIXME (overlay) UNKNOWN-YEARS Emil Ernerfeldt <emil.ernerfeldt@gmail.com>
+License: (MIT or Apache-2.0) and OFL-1.1 and LicenseRef-UFL-1.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: fonts/Hack-Regular.txt
+Copyright:
+ 2018 Source Foundry Authors and licensed under the MIT License
+ 2003 Bitstream Inc. and licensed under the Bitstream Vera License with Reserved Font Names "Bitstream" and "Vera"
+ 2018 Source Foundry Authors
+ 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: fonts/emoji-icon-font-mit-license.txt
+Copyright: 2014 John Slegers
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: debian/*
+Copyright:
+ 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024 Maytham Alsudany <maytha8thedev@gmail.com>
+License: (MIT or Apache-2.0) and OFL-1.1 and LicenseRef-UFL-1.0
+
+License: (MIT
+ FIXME (overlay): Unrecognized crate license, please find the full license text in the rest of the crate source code and copy-paste it here
+
+License: Apache-2.0)
+ FIXME (overlay): Unrecognized crate license, please find the full license text in the rest of the crate source code and copy-paste it here
+
+License: LicenseRef-UFL-1.0
+ FIXME (overlay): Unrecognized crate license, please find the full license text in the rest of the crate source code and copy-paste it here
+
+License: OFL-1.1
+ FIXME (overlay): Unrecognized crate license, please find the full license text in the rest of the crate source code and copy-paste it here
