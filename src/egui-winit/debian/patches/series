@@ -1,0 +1,4 @@
+lower-msrv.patch
+relax-deps.patch
+adapt-for-rwh05.patch
+remove-unneeded-as_ptr.patch

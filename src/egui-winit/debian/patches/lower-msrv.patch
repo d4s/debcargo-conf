@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+ 
+ [package]
+ edition = "2021"
+-rust-version = "1.72"
++rust-version = "1.62"
+ name = "egui-winit"
+ version = "0.27.2"
+ authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
