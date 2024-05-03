@@ -1,0 +1,2 @@
+overlay = "."
+uploaders = ["Federico Ceratto <federico@debian.org>"]
