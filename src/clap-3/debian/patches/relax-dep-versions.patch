@@ -1,6 +1,10 @@
+Index: clap-3/Cargo.toml
+===================================================================
 --- clap-3.orig/Cargo.toml
 +++ clap-3/Cargo.toml
-@@ -353,6 +353,6 @@
+@@ -351,10 +351,10 @@ version = "=3.2.25"
+ optional = true
+ 
  [dependencies.clap_lex]
 -version = "0.2.2"
 +version = "0.3"
@@ -9,13 +13,28 @@
 -version = "1.0"
 +version = ">= 1.0"
  
-@@ -375,3 +375,3 @@
+ [dependencies.once_cell]
+ version = "1.12.0"
+@@ -365,7 +365,7 @@ version = "1.0"
+ optional = true
+ 
+ [dependencies.strsim]
+-version = "0.10"
++version = "0.11"
+ optional = true
+ 
+ [dependencies.termcolor]
+@@ -373,11 +373,11 @@ version = "1.1.1"
+ optional = true
+ 
  [dependencies.terminal_size]
 -version = "0.2.1"
 +version = "< 0.4"
  optional = true
-@@ -379,3 +379,3 @@
+ 
  [dependencies.textwrap]
 -version = "0.16"
 +version = "< 0.17"
  features = []
+ default-features = false
+ 
