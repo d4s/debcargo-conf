@@ -1,0 +1,13 @@
+Index: i18n-embed-fl/Cargo.toml
+===================================================================
+--- i18n-embed-fl.orig/Cargo.toml
++++ i18n-embed-fl/Cargo.toml
+@@ -61,7 +61,7 @@ version = "1.0"
+ version = "1.0"
+ 
+ [dependencies.strsim]
+-version = "0.10"
++version = "0.11"
+ 
+ [dependencies.syn]
+ version = "2.0"
