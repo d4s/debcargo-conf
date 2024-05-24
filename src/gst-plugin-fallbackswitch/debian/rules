@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+	NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+else
+	NUMJOBS = 1
+endif
+
+CARGO_C_FLAGS = --release \
+	--destdir=debian/tmp \
+	--prefix=/usr \
+	--libdir=/usr/lib/${DEB_HOST_MULTIARCH} \
+	--offline \
+	-v \
+	-j $(NUMJOBS)
+
+
+%:
+	dh $@ --buildsystem cargo
+
+execute_after_dh_auto_build:
+	CARGO_HOME=debian/cargo_home \
+		/usr/share/cargo/bin/cargo cbuild $(CARGO_C_FLAGS)
+
+override_dh_auto_install:
+	CARGO_HOME=debian/cargo_home \
+		/usr/share/cargo/bin/cargo cinstall $(CARGO_C_FLAGS)
+	dh_auto_install
+
+execute_after_dh_install:
+	find debian -name Cargo.lock -delete

@@ -1,0 +1,76 @@
+Source: rust-gst-plugin-fallbackswitch
+Section: rust
+Priority: optional
+Build-Depends: debhelper (>= 12),
+ dh-cargo (>= 25),
+ cargo:native <!nocheck>,
+ rustc:native (>= 1.70) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-gst-plugin-version-helper-0.8+default-dev <!nocheck>,
+ librust-gstreamer-0.22+default-dev <!nocheck>,
+ librust-gstreamer-0.22+v1-20-dev <!nocheck>,
+ librust-gstreamer-audio-0.22+default-dev <!nocheck>,
+ librust-gstreamer-base-0.22+default-dev <!nocheck>,
+ librust-gstreamer-video-0.22+default-dev <!nocheck>,
+ librust-once-cell-1+default-dev <!nocheck>,
+ librust-parking-lot-0.12+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Matthias Geiger <werdahias@riseup.net>
+Standards-Version: 4.6.2
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/gst-plugin-fallbackswitch]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/gst-plugin-fallbackswitch
+X-Cargo-Crate: gst-plugin-fallbackswitch
+Rules-Requires-Root: no
+
+Package: librust-gst-plugin-fallbackswitch-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-gio-0.19+default-dev,
+ librust-gst-plugin-gtk4-0.12+default-dev,
+ librust-gst-plugin-version-helper-0.8+default-dev,
+ librust-gstreamer-0.22+default-dev,
+ librust-gstreamer-0.22+v1-18-dev,
+ librust-gstreamer-0.22+v1-20-dev,
+ librust-gstreamer-audio-0.22+default-dev,
+ librust-gstreamer-base-0.22+default-dev,
+ librust-gstreamer-video-0.22+default-dev,
+ librust-gtk4-0.8+default-dev,
+ librust-once-cell-1+default-dev,
+ librust-parking-lot-0.12+default-dev
+Provides:
+ librust-gst-plugin-fallbackswitch+capi-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch+default-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch+doc-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch+gio-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch+gst-plugin-gtk4-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch+gtk-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch+v1-20-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+capi-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+default-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+doc-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+gio-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+gst-plugin-gtk4-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+gtk-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0+v1-20-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+capi-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+default-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+doc-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+gio-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+gst-plugin-gtk4-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+gtk-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12+v1-20-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+capi-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+default-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+doc-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+gio-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+gst-plugin-gtk4-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+gtk-dev (= ${binary:Version}),
+ librust-gst-plugin-fallbackswitch-0.12.4+v1-20-dev (= ${binary:Version})
+Description: GStreamer Fallback Switcher and Source Plugin - Rust source code
+ Source code for Debianized Rust crate "gst-plugin-fallbackswitch"
