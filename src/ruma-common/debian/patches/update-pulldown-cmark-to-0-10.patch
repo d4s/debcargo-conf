@@ -1,0 +1,13 @@
+Index: ruma-common/Cargo.toml
+===================================================================
+--- ruma-common.orig/Cargo.toml
++++ ruma-common/Cargo.toml
+@@ -86,7 +86,7 @@ features = ["macros"]
+ optional = true
+ 
+ [dependencies.pulldown-cmark]
+-version = "0.9.1"
++version = "0.10"
+ optional = true
+ default-features = false
+ 

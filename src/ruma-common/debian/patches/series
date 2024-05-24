@@ -3,3 +3,4 @@ base64-0.21.diff
 relax-deps.diff
 disable-tests-compiler-version-sensitive.diff
 relax-dep.diff
+update-pulldown-cmark-to-0-10.patch
