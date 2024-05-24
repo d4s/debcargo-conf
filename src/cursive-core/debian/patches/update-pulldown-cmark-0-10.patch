@@ -1,0 +1,91 @@
+From 0a95c82c88c8a791d7fd983e7fb9f568b77551a8 Mon Sep 17 00:00:00 2001
+From: Alexandre Bury <alexandre.bury@gmail.com>
+Date: Wed, 27 Mar 2024 11:35:59 -0400
+Subject: [PATCH] Update pulldown-cmark
+
+---
+ cursive-core/Cargo.toml                   |  2 +-
+ cursive-core/src/utils/markup/markdown.rs | 20 +++++++++++---------
+ 2 files changed, 12 insertions(+), 10 deletions(-)
+
+Index: cursive-core/Cargo.toml
+===================================================================
+--- cursive-core.orig/Cargo.toml
++++ cursive-core/Cargo.toml
+@@ -61,7 +61,7 @@ default-features = false
+ version = "0.4"
+ 
+ [dependencies.pulldown-cmark]
+-version = "0.9"
++version = "0.10"
+ optional = true
+ default-features = false
+ 
+Index: cursive-core/src/utils/markup/markdown.rs
+===================================================================
+--- cursive-core.orig/src/utils/markup/markdown.rs
++++ cursive-core/src/utils/markup/markdown.rs
+@@ -9,7 +9,7 @@ use crate::theme::{Effect, Style};
+ use crate::utils::markup::{StyledIndexedSpan, StyledString};
+ use crate::utils::span::IndexedCow;
+ 
+-use pulldown_cmark::{self, CowStr, Event, Tag};
++use pulldown_cmark::{self, CowStr, Event, Tag, TagEnd};
+ use unicode_width::UnicodeWidthStr;
+ 
+ /// Parses the given string as markdown text.
+@@ -29,7 +29,7 @@ pub struct Parser<'a> {
+     first: bool,
+     stack: Vec<Style>,
+     input: &'a str,
+-    parser: pulldown_cmark::Parser<'a, 'a>,
++    parser: pulldown_cmark::Parser<'a>,
+ }
+ 
+ impl<'a> Parser<'a> {
+@@ -72,7 +72,7 @@ impl<'a> Iterator for Parser<'a> {
+                     Tag::Emphasis => {
+                         self.stack.push(Style::from(Effect::Italic))
+                     }
+-                    Tag::Heading(level, ..) => {
++                    Tag::Heading { level, .. } => {
+                         return Some(
+                             self.literal(format!(
+                                 "{} ",
+@@ -81,7 +81,9 @@ impl<'a> Iterator for Parser<'a> {
+                         )
+                     }
+                     Tag::BlockQuote => return Some(self.literal("> ")),
+-                    Tag::Link(_, _, _) => return Some(self.literal("[")),
++                    Tag::Link {
++                        dest_url, title, ..
++                    } => return Some(self.literal(format!("[{title}]({dest_url})"))),
+                     Tag::CodeBlock(_) => return Some(self.literal("```")),
+                     Tag::Strong => self.stack.push(Style::from(Effect::Bold)),
+                     Tag::Paragraph if !self.first => {
+@@ -91,13 +93,10 @@ impl<'a> Iterator for Parser<'a> {
+                 },
+                 Event::End(tag) => match tag {
+                     // Remove from stack!
+-                    Tag::Paragraph if self.first => self.first = false,
+-                    Tag::Heading(..) => return Some(self.literal("\n\n")),
+-                    Tag::Link(_, link, _) => {
+-                        return Some(self.literal(format!("]({})", link)))
+-                    }
+-                    Tag::CodeBlock(_) => return Some(self.literal("```")),
+-                    Tag::Emphasis | Tag::Strong => {
++                    TagEnd::Paragraph if self.first => self.first = false,
++                    TagEnd::Heading(..) => return Some(self.literal("\n\n")),
++                    TagEnd::CodeBlock => return Some(self.literal("```")),
++                    TagEnd::Emphasis | TagEnd::Strong => {
+                         self.stack.pop().unwrap();
+                     }
+                     _ => (),
+@@ -107,6 +106,7 @@ impl<'a> Iterator for Parser<'a> {
+                 Event::HardBreak => return Some(self.literal("\n")),
+                 // Treat all text the same
+                 Event::FootnoteReference(text)
++                | Event::InlineHtml(text)
+                 | Event::Html(text)
+                 | Event::Text(text)
+                 | Event::Code(text) => {

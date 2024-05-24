@@ -2,3 +2,4 @@ remove-unstable-feature.patch
 tweak-deps.patch
 ignore-doctest-that-requres-cursive.patch
 remove-ansi-parser.patch
+update-pulldown-cmark-0-10.patch
