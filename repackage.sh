@@ -12,3 +12,4 @@ fi
 
 REALVER="$(get_existing_version "$PKGDIR")"
 run_debcargo --no-overlay-write-back --changelog-ready
+check_or_add_tarball_hash

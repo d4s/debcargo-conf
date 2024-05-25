@@ -81,9 +81,13 @@ if [ -z "$CRATE" ]; then
 fi
 
 run_debcargo() {
+	# run debcargo package and log its output into debcargo.log
 	rm -rf "$BUILDDIR" "$(dirname "$BUILDDIR")/rust-${PKGNAME}_${REALVER:-$VER}"*.orig.tar.*
+	set +x
 	set +e
-	$DEBCARGO package --config "$PKGCFG" --directory "$BUILDDIR" "$@" "$CRATE" "${REALVER:-$VER}"
+    set -o pipefail
+	$DEBCARGO package --config "$PKGCFG" --directory "$BUILDDIR" "$@" "$CRATE" "${REALVER:-$VER}" 2>&1 | tee "${PWD}/build/debcargo.log"
+    set +o pipefail
 	if [ $? -ne 0 ]; then
 		echo "Command failed. If the patches failed to apply, to rebase them, run":
 		echo "cd $BUILDDIR"
@@ -97,6 +101,50 @@ run_debcargo() {
 	fi
 	set -e
 }
+
+check_or_add_tarball_hash() {
+    # Append the SHA hash of the .orig.tar.gz tarball to src/<name>/debian/checksums
+    # creating the file if needed. If the hash is already there, run a comparison
+    # and error out if they differ.
+    # Reads from build/debcargo.log - to be run after run_debcargo
+	# note: we assume "set -e" is set
+    out=$(grep '^Original Tarball for package:' ./build/debcargo.log) || return
+
+    read -ra arr <<< "$out"
+    tarball_fn=${arr[4]}
+    hashline=$(/usr/bin/sha256sum "$tarball_fn") || {
+        echo "Failed to generate sha hash for $tarball_fn"
+        exit 1
+    }
+
+    read -ra arr <<< "$hashline"
+    hash=${arr[0]}
+    hashfile="$PKGDIR/debian/checksums"
+    # Initialize file if needed
+    if [ ! -f "$hashfile" ]; then
+        echo "Checksums-Sha256:" > "$hashfile"
+        git add "$hashfile"
+    fi
+
+    prev_entry=$(grep "^ $hash " "$hashfile") || true
+    if [ -z "$prev_entry" ]; then
+        # Newly added tarball: append with indentation
+        echo "Storing hash for $tarball_fn"
+        echo " $hashline" >> "$hashfile"
+    else
+        read -ra arr <<< "$prev_entry"
+        prev_hash=${arr[0]}
+        if [ "$hash" = "$prev_hash" ]; then
+            echo "$tarball_fn hash check OK"
+        else
+            echo "WARNING: $tarball_fn hash check failed!"
+            echo "sha256sum $tarball_fn differs from the content of $hashfile"
+            echo "This could be the sign of tampering with the .orig file"
+            exit 1
+        fi
+    fi
+}
+
 
 shouldbuild() {
 	local dst="$1"
