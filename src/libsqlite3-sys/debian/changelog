@@ -1,3 +1,10 @@
+rust-libsqlite3-sys (0.28.0-1) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * Package libsqlite3-sys 0.28.0 from crates.io using debcargo 2.6.1
+
+ -- William Desportes <williamdes@wdes.fr>  Thu, 30 May 2024 12:54:45 +0200
+
 rust-libsqlite3-sys (0.26.0-1) unstable; urgency=medium
 
   * Package libsqlite3-sys 0.26.0 from crates.io using debcargo 2.6.0
