@@ -1,0 +1,191 @@
+## DABS - Dependency aware build system
+
+An ongoing effort to move the Rust packaging scripts into an integrated
+tool that replaces and augments a lot of custom wrappers used by
+various team members
+
+### Unified entrypoint
+
+```
+$ dabs prepare foo          # prepare package foo for packaging
+$ dabs build [bar baz] foo  # build the package, optionally supplying with dependencies 
+                            # (like dev/chain_build.py)
+$ dabs dput                 # upload
+```
+
+We could also experiment with cmd2 to provide an interactive.
+
+### Full package
+
+Current tooling consists of debcargo, which is used to generate Debian packages from Rust crates; debcargo-conf
+scripts update.sh, build.sh and release.sh, as the packaging workflow; and auxilary ones in dc-c/dev/ like the list-* bunch, chain_build.py, etc.
+
+Ideally the new tool would be a single, self-contained package, echoing with the previous point.
+
+There might be different opinions regarding (over)coupling. Comparing it to cargo or x.py of rustc probably helps.
+
+### Modular
+
+Right now vars.sh.frag provides some degree of modularity in the scripts, but well, shell scripts don't have modules,
+local variables, or classes, so they are more of an one-shot style. Also, environment variables aren't a terribly good way to pass around arguments.
+
+
+### Released as native package
+
+Current packaging tools written in Rust (e.g. debcargo & cargo-debstatus) are first published to crates.io,
+then packaged from there, then uploaded in Debian. This feels like unnecessary burden.
+Since this is a Debian-specific build system, in future it could become a native package.
+Probably also integrate dh-cargo into it.
+
+### Proper debhelper integration and/or interoperability
+
+Status quo is dh-cargo, cross calling the cargo wrapper in src:rustc/debian/bin/cargo (previously src:cargo).
+
+However, they are quite coupled with debcargo-conf tooling, which generates debian/ on the fly, consumed by dh-cargo,
+only running basic build command and installing the crate source to /usr/share/cargo/registry.
+The cargo wrapper adds some args to all cargo invocations and a prepare-debian command is probably better as a script of its own.
+
+The dh buildsystem should be able to do what is needed on its own with various options and flags, while DABS
+does bootstrapping and maintenance for the debian/ directory, instructions for dh.
+This is helpful for scenarios e.g. out of a package build, and to avoid generating the whole debian/ over just to change some options.
+
+An illustrative, fictious example given by him: suppose we have a package with 5 binaries, and we want binaries foo & bar disabled, and then later, temporarily, a third of the binaries need some special treatment; running
+
+```
+debcargo --skip-binaries foo,bar
+```
+
+should not unpack a hardcoded list of the remaining 3 binaries in that crate, but instead generate a debian/rules file looking like this:
+
+```
+%:
+    dh "$@" --buildsystem cargo --skip-binaries foo,bar
+```
+
+...and the `dh_auto_*` debhelpers in turn should not just internally unpack the list of binaries, but allow overiding, like this:
+
+```
+override_dh_auto_test:
+    dh_auto_test --skip-binaries foo,bar,baz
+    LOCALE=C dh_auto_test --only-binaries baz
+```
+
+### Proper dependency manipulation, and other Cargo.toml modifications
+
+Currently, we use d/patches to implement dependency disabling, version relaxing, and some other things such as disabling benches/examples.
+
+A solution to automatically generate such patches from debcargo.toml was proposed in the past, but was never implemented.
+
+It would be convenient to have the dh buildsystem handle this, as illustrated by the examlpe in the previous section.
+
+### Reusable
+
+In future people or other teams could reuse part of the tooling in other teams or for other languages.
+
+The Rust-specific part could become a pluggable backend.
+
+### Self documenting
+
+Generate HTML documentation for the code and packaging workflow and publish it automatically
+
+### Auto-generate README.Debian from patch headers and other things
+
+Currently only a few packages carry a README.Debian to list what is changed in Debian.
+It's probably helpful to have one for each modified (e.g. patched) package.
+If all patches use DEP-3 headers, it's easy to auto-generate a list of patch changes with them.
+
+### Design
+
+- Use logging with variable verbosity
+- Log full git commands to make it easy to reproduce and debug
+- Log code branches, describe *why* something is done
+- Identify Rust-specific VS agnostic stuff for future use
+- Use type hints, pass mypy checks
+- Focus on simplicity and readability. Please minimize use of classes and inheritance
+- Also log to an append-only file for investigation
+
+### Inclusive of different packaging styles
+
+Abstract away the rust-team specific repository structure, traditional gbp, and others. Support hooks.
+
+Rust team currently uses the debcargo-conf repository to store debian/ "overlays" of packages.
+Combined with a monorepo, some argue it's cleaner and easier to maintain.
+However, this ease of "use" is an artifact of how the current tooling works.
+Other styles of organizing can achieve this level of ease of use as well, as long as the tooling supports them.
+Those interested can add support for their favored way.
+
+The current scripts make a set of fairly strong assumptions about developer machine setup and configuration. 
+For example, they assume the name "origin" of the git remote; and they tend to expect to have Internet access when
+running for synchronizing state between developers.
+More reliable recovery from state synchronization failures would let the tools work while the developer is offline.
+
+### Using upstream repos and supporting workspace repos
+
+Arguably, Debian mandates building from upstream sources. The idea of what is "upstream" varies between people.
+The "repository" field in Cargo.toml is probably the most authentic, while the .crate's people actually use,
+pulled by cargo, are the ones published on crates.io. This isn't a simple debate, but to be noticed is some recent
+work comparing crates.io published crates with origin repositories [crup1,crup2].
+
+There are 3 types: single crate single repo, workspace repo with lockstep releases,
+workspace repo with asynchronous releases. The first is what we do now; the second is rather easy to accomplish.
+The third is a bit more complicated, because each release of any member crate require a full source upload
+containing the whole workspace, potentially interfering with other members from WIP code.
+
+With a configuration flag, automatically build source packages for each workspace member,
+then selectively build and upload binary packages upon that.
+
+[crup1]: https://mastodon.social/@kornel/112626463128422583
+[crup2]: https://lawngno.me/blog/2024/06/10/divine-provenance.html
+
+#### Supporting "out of band" projects, i.e. those not published on crates.io
+
+A point in favor of upstream repos over crates.io retrieved sources. Besides the lack of consensus on how packages
+of these should be named (and the more or less consensus that librust-*-dev is reserved for crates.io crates),
+this is rather easily done with upstream repo style packaging.
+
+OTOH, observations show that those often are bin crates, albeit often being a workspace with internal libs.
+It's probably worth "vendoring" the libs with a single source package and release just the binary.
+
+### Better feature and version constraint handling
+
+Currently, feature requirements and version constraints are expressed as (mostly) virtual packages in the
+Provides and Depends fields. This not only bloats the field swith exponentially (?) growing combinations,
+but also makes it hard to consume in a clean way.
+
+Version constraints are done so because Debian version constraints are different from the (modified)
+ semver Rust and cargo use. TODO: ways to get rid of
+
+There is another use of feature packages, to separate conflicting optional features, so their dependencies
+don't clash with one another as they would if all s
+
+### Act as a testbed for ideas to be ported into debcargo
+debcargo is in a different repo and written in Rust and necessarily moves more slowly.
+The tooling could be in a subdirectory in ./dev and move quickly. Once stabilized some stuff could go into debcargo
+
+### Automate walking the dependency tree:
+
+Wrap calls to debcargo and:
+
+    - show dependencies and reverse dependencies in 3 trees
+    - symbols for packaged / missing / outdated / failing-to-build / failing-to-update
+    - walk through the tree and
+    - run builds
+    - try to update then build
+    - try to relax dependencies progressively until a build succeeds
+    - show a report of which versions build and which do not to 
+
+
+## Roadmap
+
+- Create a wrapper that works as a frontend to existing bash scripts
+- Incrementally replace functions provided by bash scripts where beneficial
+- Add unit and functional tests
+- Automate multi-package update, rebuild, test, upload
+- Provide more extensive and clear logging
+- Refactor into a library
+
+### potential long term goals
+
+- become language-independent, e.g. reused for Go and other "multipackage" repos
+- show build and deps tree in a web UI
+- run on a buildbot on e.g. rust.debian.net to provide an easily accessible, public dashboard on where things are
