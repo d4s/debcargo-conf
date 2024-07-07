@@ -1,0 +1,25 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pubgrub
+Upstream-Contact:
+ Matthieu Pizenberg <matthieu.pizenberg@gmail.com>
+ Alex Tokarev <aleksator@gmail.com>
+ Jacob Finkelman <Eh2406@wayne.edu>
+Source: https://github.com/pubgrub-rs/pubgrub
+
+Files: *
+Copyright:
+ Matthieu Pizenberg <matthieu.pizenberg@gmail.com>
+ Alex Tokarev <aleksator@gmail.com>
+ Jacob Finkelman <Eh2406@wayne.edu>
+License: MPL-2.0
+Comment:
+ No express copyright is asserted.
+
+Files: debian/*
+Copyright:
+ 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024 Antonio Russo <aerusso@aerusso.net>
+License: MPL-2.0
+
+License: MPL-2.0
+ Debian systems provide the MPL 2.0 in /usr/share/common-licenses/MPL-2.0
