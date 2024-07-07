@@ -1,9 +1,0 @@
-Index: pyo3/Cargo.toml
-===================================================================
---- pyo3.orig/Cargo.toml
-+++ pyo3/Cargo.toml
-@@ -229,3 +229,3 @@
- [dev-dependencies.widestring]
--version = "0.5.1"
-+version = "1.0"
- 
