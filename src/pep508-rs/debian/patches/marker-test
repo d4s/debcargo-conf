@@ -1,0 +1,10 @@
+--- a/src/marker.rs
++++ b/src/marker.rs
+@@ -1444,6 +1444,7 @@ mod test {
+ 
+     #[test]
+     #[cfg(feature = "tracing")]
++    #[cfg(feature = "pyo3")]
+     fn warnings() {
+         let env37 = env37();
+         testing_logger::setup();

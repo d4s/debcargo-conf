@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -55,7 +55,7 @@ version = "0.10.0"
+ optional = true
+ 
+ [dependencies.regex]
+-version = "1.10.4"
++version = ">=1.10.2"
+ 
+ [dependencies.rkyv]
+ version = "0.7.44"
