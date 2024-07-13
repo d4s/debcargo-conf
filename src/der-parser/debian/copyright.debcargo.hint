@@ -12,7 +12,7 @@ Comment:
  be correct information so you should review and fix this before uploading to
  the archive.
 
-Files: ./LICENSE-MIT
+Files: LICENSE-MIT
 Copyright: 2017 Pierre Chifflier
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -21,8 +21,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2018-2022 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018-2022 kpcyrd <git@rxv.cc>
+ 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2024 kpcyrd <git@rxv.cc>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
