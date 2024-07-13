@@ -1,0 +1,20 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: compact_jwt
+Upstream-Contact: William Brown <william@blackhats.net.au>
+Source: https://github.com/kanidm/compact-jwt
+
+Files: *
+Copyright: 
+ 2021-2024 William Brown <william@blackhats.net.au>
+ 2022-2024 James Hodgkinson <james@terminaloutcomes.com>
+ 2023-2024 David Mulder <dmulder@samba.org>
+License: MPL-2.0
+
+Files: debian/*
+Copyright:
+ 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024 Bernhard Dick <bernhard@bdick.de>
+License: MPL-2.0
+
+License: MPL-2.0
+ Debian systems provide the MPL 2.0 in /usr/share/common-licenses/MPL-2.0
