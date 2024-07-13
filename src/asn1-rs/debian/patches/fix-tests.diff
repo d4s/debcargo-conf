@@ -1,0 +1,105 @@
+Index: asn1-rs/tests/cov.rs
+===================================================================
+--- asn1-rs.orig/tests/cov.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/tests/cov.rs	2024-07-13 23:29:44.402297500 +0200
+@@ -1,3 +1,5 @@
++#![cfg(feature="std")]
++
+ //! Generic and coverage tests
+ use asn1_rs::*;
+ use std::io;
+Index: asn1-rs/tests/der.rs
+===================================================================
+--- asn1-rs.orig/tests/der.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/tests/der.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -1,3 +1,5 @@
++#![cfg(feature="std")]
++
+ use asn1_rs::*;
+ use hex_literal::hex;
+ use nom::sequence::pair;
+Index: asn1-rs/tests/to_der.rs
+===================================================================
+--- asn1-rs.orig/tests/to_der.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/tests/to_der.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -1,3 +1,5 @@
++#![cfg(feature="std")]
++
+ use asn1_rs::*;
+ use hex_literal::hex;
+ // use nom::HexDisplay;
+Index: asn1-rs/src/asn1_types/integer.rs
+===================================================================
+--- asn1-rs.orig/src/asn1_types/integer.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/src/asn1_types/integer.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -562,7 +562,7 @@
+     };
+ }
+ 
+-#[cfg(test)]
++#[cfg(all(test,std))]
+ mod tests {
+     use crate::{Any, FromDer, Header, Tag, ToDer};
+     use std::convert::TryInto;
+Index: asn1-rs/src/asn1_types/set/btreeset.rs
+===================================================================
+--- asn1-rs.orig/src/asn1_types/set/btreeset.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/src/asn1_types/set/btreeset.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -90,7 +90,7 @@
+     }
+ }
+ 
+-#[cfg(test)]
++#[cfg(all(test,std))]
+ mod tests {
+     use crate::*;
+     use core::convert::TryFrom;
+Index: asn1-rs/src/asn1_types/oid.rs
+===================================================================
+--- asn1-rs.orig/src/asn1_types/oid.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/src/asn1_types/oid.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -467,7 +467,7 @@
+     };
+ }
+ 
+-#[cfg(test)]
++#[cfg(all(test,std))]
+ mod tests {
+     use crate::{FromDer, Oid, ToDer};
+     use hex_literal::hex;
+Index: asn1-rs/src/class.rs
+===================================================================
+--- asn1-rs.orig/src/class.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/src/class.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -67,7 +67,7 @@
+     }
+ }
+ 
+-#[cfg(test)]
++#[cfg(all(test,std))]
+ mod tests {
+     use super::*;
+ 
+Index: asn1-rs/src/header.rs
+===================================================================
+--- asn1-rs.orig/src/header.rs	2024-07-13 23:29:44.406297558 +0200
++++ asn1-rs/src/header.rs	2024-07-13 23:29:44.406297558 +0200
+@@ -438,7 +438,7 @@
+ 
+ impl Eq for Header<'_> {}
+ 
+-#[cfg(test)]
++#[cfg(all(test,std))]
+ mod tests {
+     use crate::*;
+     use hex_literal::hex;
+Index: asn1-rs/tests/krb5.rs
+===================================================================
+--- asn1-rs.orig/tests/krb5.rs	2006-07-24 03:21:28.000000000 +0200
++++ asn1-rs/tests/krb5.rs	2024-07-13 23:30:59.359369895 +0200
+@@ -1,3 +1,5 @@
++#![cfg(feature="std")]
++
+ //! Test implementation for Kerberos v5
+ //!
+ //! This is mostly used to verify that required types and functions are implemented,
