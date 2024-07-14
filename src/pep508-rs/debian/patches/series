@@ -1,5 +1,6 @@
 relax-serde-json
-relax-toml
 relax-indoc
 newer-pyo3
 relax-pyo3-log
+relax-regex
+marker-test

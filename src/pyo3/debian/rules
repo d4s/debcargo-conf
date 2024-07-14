@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem cargo
+
+override_dh_install:
+	dh_install
+	chmod -x debian/librust-pyo3-dev/usr/share/cargo/registry/pyo3-0.21.2/src/conversions/std/ipaddr.rs
+	chmod -x debian/librust-pyo3-dev/usr/share/cargo/registry/pyo3-0.21.2/src/conversions/std/time.rs

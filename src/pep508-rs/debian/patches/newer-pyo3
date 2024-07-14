@@ -2,12 +2,12 @@ Index: pep508-rs/Cargo.toml
 ===================================================================
 --- pep508-rs.orig/Cargo.toml
 +++ pep508-rs/Cargo.toml
-@@ -51,7 +51,7 @@ version = "1.18.0"
- version = "0.3.11"
+@@ -43,7 +43,7 @@ version = "1.18.0"
+ version = "0.6.0"
  
  [dependencies.pyo3]
--version = "0.19.2"
-+version = ">=0.18, <0.21"
+-version = "0.21.2"
++version = ">=0.18, <0.22"
  features = [
      "abi3",
      "extension-module",

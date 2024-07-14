@@ -6,8 +6,8 @@ Index: pep508-rs/Cargo.toml
  optional = true
  
  [dependencies.pyo3-log]
--version = "0.8.3"
-+version = ">0.8, <0.10"
+-version = "0.10.0"
++version = ">0.8, <0.11"
  optional = true
  
  [dependencies.regex]
