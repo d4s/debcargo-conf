@@ -1,0 +1,16 @@
+### Dabs shell
+
+Interactive cmd2 shell: run ./dev/dabs/dshell.py
+
+It is meant to be started from the repository root.
+
+You can run commands at startup by creating dev/dabs/startup
+
+It saves commands history in dev/dabs/dabs_history.dat and allows creating
+aliases etc
+
+Set the target package you want to build and upload using set_target
+
+Use "set editor" to configure your favourite editor
+
+Execute shell commands with `!<cmd...>`
