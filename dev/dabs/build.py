@@ -2,6 +2,7 @@
 
 """
 Dependency aware build system - build.sh
+2024 Debian Rust team
 2024 Federico Ceratto <federico@debian.org>
 Released under AGPL
 """
@@ -23,33 +24,33 @@ log = logging.getLogger()
 
 def runc(q: list, *a, **kw) -> str:
     """Run command, check return value for success and return stdout"""
-    print("running runc %s %s", repr(q), repr(a), repr(kw))
+    print("running runc", repr(q), repr(a), repr(kw))
     print(" ".join(q), " ".join(a))
     p = subprocess.run(q, *a, **kw, check=True, capture_output=True, text=True)
-    print("---")
+    print("-- output --")
     if len(p.stdout) < 200:
         print(p.stdout)
     else:
-        print("...skipping {len(p.stdout)} lines...")
-    print("---")
+        print(f"...skipping {len(p.stdout)} lines...")
+    print("-- end --")
     return p.stdout
 
 
 def runrv(q, *a, **kw) -> int:
     """Run command and extract return value"""
-    print("running runrv <%s> <%s>", repr(q), repr(a), repr(kw))
+    print("running runrv", repr(q), repr(a), repr(kw))
     assert isinstance(a, list) or isinstance(a, tuple), repr(a)
     for x in a:
         assert isinstance(x, str), repr(a)
     print(" ".join(a))
     p = subprocess.run(q, *a, **kw, capture_output=True, text=True)
     print("retcode", p.returncode)
-    print("---")
+    print("-- output --")
     if len(p.stdout) < 200:
         print(p.stdout)
     else:
-        print("...skipping {len(p.stdout)} lines...")
-    print("---")
+        print(f"...skipping {len(p.stdout)} lines...")
+    print("-- end --")
     return p.returncode
 
 
