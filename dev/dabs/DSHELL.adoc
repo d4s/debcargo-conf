@@ -14,3 +14,6 @@ Set the target package you want to build and upload using set_target
 Use "set editor" to configure your favourite editor
 
 Execute shell commands with `!<cmd...>`
+
+The shell is at a very early stage of development.
+See https://asciinema.org/a/rJhjpFkRyI0NBKB6qSkkVmDd3
