@@ -262,12 +262,14 @@ deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg] http://security.d
         # Since apt replaces the files in that directory instead of rewriting
         # existing inodes, we can rely on the directory mtime.
 
-        foo = runc(["apt-config", "shell", "v", "Dir::State::Lists/d"]).strip()
-        assert foo.startswith("v='/")
-        assert foo.endswith("/'")
-        foo = foo[3:-1]
+        apt_lists_dir = runc(
+            ["apt-config", "shell", "v", "Dir::State::Lists/d"]
+        ).strip()
+        assert apt_lists_dir.startswith("v='/")
+        assert apt_lists_dir.endswith("/'")
+        apt_lists_dir = apt_lists_dir[3:-1]
 
-        if should_build("dpkg-dummy/status", foo):
+        if should_build("dpkg-dummy/status", apt_lists_dir):
             # pretend dpkg status file that marks all packages as installed
             # this is because dpkg-checkbuilddeps only works on installed pkgs
             apt_cache = runc(
