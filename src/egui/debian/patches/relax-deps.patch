@@ -1,0 +1,67 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -43,10 +43,6 @@
+ 
+ [lib]
+ 
+-[dependencies.accesskit]
+-version = "0.12"
+-optional = true
+-
+ [dependencies.ahash]
+ version = "0.8.6"
+ features = [
+@@ -59,10 +55,6 @@
+ version = "0.3"
+ optional = true
+ 
+-[dependencies.document-features]
+-version = " 0.2.8"
+-optional = true
+-
+ [dependencies.epaint]
+ version = "0.27.2"
+ default-features = false
+@@ -75,14 +67,6 @@
+ [dependencies.nohash-hasher]
+ version = "0.2"
+ 
+-[dependencies.puffin]
+-version = "0.19"
+-optional = true
+-
+-[dependencies.ron]
+-version = "0.8"
+-optional = true
+-
+ [dependencies.serde]
+ version = "1"
+ features = [
+@@ -92,7 +76,6 @@
+ optional = true
+ 
+ [features]
+-accesskit = ["dep:accesskit"]
+ bytemuck = ["epaint/bytemuck"]
+ callstack = ["dep:backtrace"]
+ cint = ["epaint/cint"]
+@@ -107,19 +90,9 @@
+     "epaint/log",
+ ]
+ mint = ["epaint/mint"]
+-persistence = [
+-    "serde",
+-    "epaint/serde",
+-    "ron",
+-]
+-puffin = [
+-    "dep:puffin",
+-    "epaint/puffin",
+-]
+ rayon = ["epaint/rayon"]
+ serde = [
+     "dep:serde",
+     "epaint/serde",
+-    "accesskit?/serde",
+ ]
+ unity = ["epaint/unity"]

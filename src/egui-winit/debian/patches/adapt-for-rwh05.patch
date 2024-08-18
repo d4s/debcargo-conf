@@ -1,0 +1,20 @@
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -22,7 +22,7 @@
+ 
+ pub use window_settings::WindowSettings;
+ 
+-use raw_window_handle::HasDisplayHandle;
++use raw_window_handle::{HasDisplayHandle, HasRawDisplayHandle};
+ 
+ #[allow(unused_imports)]
+ pub(crate) use profiling_scopes::*;
+@@ -128,7 +128,7 @@
+             current_cursor_icon: None,
+ 
+             clipboard: clipboard::Clipboard::new(
+-                display_target.display_handle().ok().map(|h| h.as_raw()),
++                display_target.display_handle().ok().map(|h| h.raw_display_handle()),
+             ),
+ 
+             simulate_touch_screen: false,

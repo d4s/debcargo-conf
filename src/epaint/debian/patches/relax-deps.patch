@@ -1,0 +1,32 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -65,10 +65,6 @@
+ features = ["derive"]
+ optional = true
+ 
+-[dependencies.document-features]
+-version = " 0.2.8"
+-optional = true
+-
+ [dependencies.ecolor]
+ version = "0.27.2"
+ default-features = false
+@@ -88,10 +84,6 @@
+ [dependencies.parking_lot]
+ version = "0.12"
+ 
+-[dependencies.puffin]
+-version = "0.19"
+-optional = true
+-
+ [dependencies.rayon]
+ version = "1.7"
+ optional = true
+@@ -129,7 +121,6 @@
+ ]
+ log = ["dep:log"]
+ mint = ["emath/mint"]
+-puffin = ["dep:puffin"]
+ rayon = ["dep:rayon"]
+ serde = [
+     "dep:serde",
