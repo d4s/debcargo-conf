@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: devicemapper
+Upstream-Contact: Stratis Developers <stratis-devel@lists.fedorahosted.org>
+Source: https://github.com/stratis-storage/devicemapper-rs
+
+Files: *
+Copyright: 2021-2024 Stratis Developers <stratis-devel@lists.fedorahosted.org>
+License: MPL-2.0
+
+Files: debian/*
+Copyright:
+ 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+License: MPL-2.0
+
+License: MPL-2.0
+ Debian systems provide the MPL 2.0 in /usr/share/common-licenses/MPL-2.0
