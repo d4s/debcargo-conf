@@ -1,0 +1,6 @@
+debian/missing-sources/assets/crl-idp/indirect.der
+debian/missing-sources/assets/crl-idp/minimal.der
+debian/missing-sources/assets/crl-idp/only_attribute_certs.der
+debian/missing-sources/assets/crl-idp/only_ca_certs.der
+debian/missing-sources/assets/crl-idp/only_some_reasons.der
+debian/missing-sources/assets/crl-idp/only_user_certs.der

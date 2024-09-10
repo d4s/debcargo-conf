@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --buildsystem cargo
+
+execute_before_dh_auto_test:
+	cp -r $(CURDIR)/debian/missing-sources/* $(CURDIR)
+
+override_dh_auto_test:
+	dh_auto_test -- test --all

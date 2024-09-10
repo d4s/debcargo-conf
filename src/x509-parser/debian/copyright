@@ -4,13 +4,18 @@ Upstream-Contact: Pierre Chifflier <chifflier@wzdftpd.net>
 Source: https://github.com/rusticata/x509-parser.git
 
 Files: *
-Copyright: 2017-2018 Pierre Chifflier <chifflier@wzdftpd.net>
+Copyright: 2017-2024 Pierre Chifflier <chifflier@wzdftpd.net>
 License: MIT or Apache-2.0
 
 Files: debian/*
 Copyright:
- 2019 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2019 kpcyrd <git@rxv.cc>
+ 2019-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2019-2024 kpcyrd <git@rxv.cc>
+License: MIT or Apache-2.0
+
+Files: debian/missing-sources/assets/crl-idp/*
+Copyright:
+ 2023 Daniel McCarney < daniel@binaryparadox.net>
 License: MIT or Apache-2.0
 
 License: Apache-2.0

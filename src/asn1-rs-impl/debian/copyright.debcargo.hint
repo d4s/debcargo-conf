@@ -1,16 +1,21 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: der-parser
+Upstream-Name: asn1-rs-impl
 Upstream-Contact: Pierre Chifflier <chifflier@wzdftpd.net>
-Source: https://github.com/rusticata/der-parser.git
+Source: https://github.com/rusticata/asn1-rs.git
 
 Files: *
-Copyright: 2017-2024 Pierre Chifflier <chifflier@wzdftpd.net>
+Copyright: FIXME (overlay) UNKNOWN-YEARS Pierre Chifflier <chifflier@wzdftpd.net>
 License: MIT or Apache-2.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
 
 Files: debian/*
 Copyright:
- 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018-2019 kpcyrd <git@rxv.cc>
+ 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024 Bernhard Dick <bernhard@bdick.de>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
