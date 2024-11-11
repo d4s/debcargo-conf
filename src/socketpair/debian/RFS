@@ -1,1 +1,0 @@
-socketpair -> system-interfaces -> wasmtime-wasi -> zellij-server -> zellij
