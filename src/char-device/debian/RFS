@@ -1,1 +1,0 @@
-char-device -> system-interface -> wasmtime-wasi -> zellij-server -> zellij
