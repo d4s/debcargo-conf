@@ -16,28 +16,28 @@ Comment:
  be correct information so you should review and fix this before uploading to
  the archive.
 
-Files: ./LICENSE-MIT
+Files: LICENSE-MIT
 Copyright: 2014 The Rust Project Developers
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: ./src/lib.rs
+Files: src/lib.rs
 Copyright: 2012-2013 The Rust Project Developers
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: ./src/version.rs
+Files: src/version.rs
 Copyright: 2012-2013 The Rust Project Developers
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: ./src/version_req.rs
+Files: src/version_req.rs
 Copyright: 2012-2013 The Rust Project Developers
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -46,8 +46,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2018-2021 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018-2021 Ximin Luo <infinity0@debian.org>
+ 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2024 Ximin Luo <infinity0@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0

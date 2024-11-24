@@ -36,7 +36,7 @@ Breaks: librust-semver-dev (<< 0.9.1~)
 Description: Semantic version parsing and comparison - Rust source code
  Source code for Debianized Rust crate "semver"
 
-Package: librust-semver-0.9+ci-dev
+Package: librust-semver-0.9+serde-dev
 Architecture: any
 Multi-Arch: same
 Depends:
@@ -45,7 +45,7 @@ Depends:
  librust-serde-1+default-dev
 Provides:
  librust-semver-0+serde-dev (= ${binary:Version}),
- librust-semver-0.9+serde-dev (= ${binary:Version}),
+ librust-semver-0+ci-dev (= ${binary:Version}),
  librust-semver-0.9+ci-dev (= ${binary:Version}),
  librust-semver-0.9.0+serde-dev (= ${binary:Version}),
  librust-semver-0.9.0+ci-dev (= ${binary:Version})
