@@ -12,14 +12,14 @@ Comment:
  be correct information so you should review and fix this before uploading to
  the archive.
 
-Files: ./LICENSE-MIT
+Files: LICENSE-MIT
 Copyright: 2016 Steve Klabnik
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: ./src/recognize.rs
+Files: src/recognize.rs
 Copyright: 2017 Google Inc. All rights reserved.
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -28,8 +28,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2018 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018 kpcyrd <git@rxv.cc>
+ 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2024 kpcyrd <git@rxv.cc>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
