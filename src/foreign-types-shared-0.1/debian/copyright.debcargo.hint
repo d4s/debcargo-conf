@@ -12,7 +12,7 @@ Comment:
  be correct information so you should review and fix this before uploading to
  the archive.
 
-Files: ./LICENSE-MIT
+Files: LICENSE-MIT
 Copyright: 2017 The foreign-types Developers
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -21,8 +21,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2020 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2020 Paul van Tilburg <paulvt@debian.org>
+ 2020-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2020-2024 Paul van Tilburg <paulvt@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
