@@ -12,7 +12,7 @@ Comment:
  be correct information so you should review and fix this before uploading to
  the archive.
 
-Files: ./LICENSE-MIT
+Files: LICENSE-MIT
 Copyright: 2015-2016 Kevin B. Knapp
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -21,8 +21,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2023 Sylvestre Ledru <sylvestre@debian.org>
+ 2023-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2023-2024 Sylvestre Ledru <sylvestre@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
