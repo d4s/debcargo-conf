@@ -28,8 +28,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2018-2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018-2023 Matthias Geiger <matthias.geiger1024@tutanota.de>
+ 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2024 Matthias Geiger <matthias.geiger1024@tutanota.de>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
