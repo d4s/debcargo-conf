@@ -21,9 +21,9 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2019-2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2019-2023 Robin Krahl <robin.krahl@ireas.org>
- 2019-2023 Alexander Kjäll <alexander.kjall@gmail.com>
+ 2019-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2019-2024 Robin Krahl <robin.krahl@ireas.org>
+ 2019-2024 Alexander Kjäll <alexander.kjall@gmail.com>
 License: MIT
 
 License: MIT
