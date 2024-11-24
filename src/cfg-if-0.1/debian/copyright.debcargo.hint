@@ -12,7 +12,7 @@ Comment:
  be correct information so you should review and fix this before uploading to
  the archive.
 
-Files: ./LICENSE-MIT
+Files: LICENSE-MIT
 Copyright: 2014 Alex Crichton
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -21,8 +21,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2020 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2020 Sylvestre Ledru <sylvestre@debian.org>
+ 2020-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2020-2024 Sylvestre Ledru <sylvestre@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
