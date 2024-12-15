@@ -9,10 +9,8 @@ excludes = [
 	"bzip2/**",
         "snappy/**",
 	"rocksdb/**",
+        "build_version.cc"
 ]
-
-# [source]
-# build_depends = ["librocksdb-deb"]
 
 [packages.lib]
 depends = ["liburing-dev", "librocksdb-dev"]
