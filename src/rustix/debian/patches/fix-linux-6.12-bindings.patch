@@ -1,0 +1,23 @@
+Description: Fix bindings with linux v6.12 and higher
+ Commit 7ed9e09e2d13d5d43385153bba4734cb0eafd7fd in linux (first released
+ in v6.12) replaced the 'pad' field of struct io_uring_getevents_arg with
+ 'min_wait_usec'. The change seems to be backwards-compatible, so that
+ passing a zero (padding) to min_wait_usec will not change the previous
+ behavior of the API. This patch is temporary, upstream should regenerate
+ the bindings
+Author: NoisyCoil <noisycoil@tutanota.com>
+Bug: https://github.com/bytecodealliance/rustix/issues/1246
+Last-Update: 2024-12-29
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/io_uring.rs
++++ b/src/io_uring.rs
+@@ -1377,7 +1377,7 @@
+ pub struct io_uring_getevents_arg {
+     pub sigmask: u64,
+     pub sigmask_sz: u32,
+-    pub pad: u32,
++    pub min_wait_usec: u32,
+     pub ts: u64,
+ }
+ 
