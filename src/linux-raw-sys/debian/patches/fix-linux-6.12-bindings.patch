@@ -1,0 +1,210 @@
+Description: Fix bindings with linux v6.12 and higher
+ Commit 7ed9e09e2d13d5d43385153bba4734cb0eafd7fd in linux (first released
+ in v6.12) replaced the 'pad' field of struct io_uring_getevents_arg with
+ 'min_wait_usec'. The change seems to be backwards-compatible, so that
+ passing a zero (padding) to min_wait_usec will not change the previous
+ behavior of the API. This patch is temporary, upstream should probably
+ regenerate the bindings.
+Author: NoisyCoil <noisycoil@tutanota.com>
+Bug: https://github.com/sunfishcode/linux-raw-sys/issues/138
+Last-Update: 2024-12-29
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/aarch64/io_uring.rs
++++ b/src/aarch64/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/arm/io_uring.rs
++++ b/src/arm/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/csky/io_uring.rs
++++ b/src/csky/io_uring.rs
+@@ -441,7 +441,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/loongarch64/io_uring.rs
++++ b/src/loongarch64/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/mips/io_uring.rs
++++ b/src/mips/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/mips32r6/io_uring.rs
++++ b/src/mips32r6/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/mips64/io_uring.rs
++++ b/src/mips64/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/mips64r6/io_uring.rs
++++ b/src/mips64r6/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/powerpc/io_uring.rs
++++ b/src/powerpc/io_uring.rs
+@@ -443,7 +443,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/powerpc64/io_uring.rs
++++ b/src/powerpc64/io_uring.rs
+@@ -443,7 +443,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/riscv32/io_uring.rs
++++ b/src/riscv32/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/riscv64/io_uring.rs
++++ b/src/riscv64/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/s390x/io_uring.rs
++++ b/src/s390x/io_uring.rs
+@@ -451,7 +451,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/sparc/io_uring.rs
++++ b/src/sparc/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/sparc64/io_uring.rs
++++ b/src/sparc64/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/x32/io_uring.rs
++++ b/src/x32/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/x86/io_uring.rs
++++ b/src/x86/io_uring.rs
+@@ -441,7 +441,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
+--- a/src/x86_64/io_uring.rs
++++ b/src/x86_64/io_uring.rs
+@@ -437,7 +437,7 @@
+ pub struct io_uring_getevents_arg {
+ pub sigmask: __u64,
+ pub sigmask_sz: __u32,
+-pub pad: __u32,
++pub min_wait_usec: __u32,
+ pub ts: __u64,
+ }
+ #[repr(C)]
