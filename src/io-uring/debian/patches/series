@@ -2,3 +2,4 @@ tweak-deps.patch
 disable-overwrite-feature.patch
 remove-optional-sc-dep.patch
 align_of_i386.patch
+fix-linux-6.12-bindings.patch

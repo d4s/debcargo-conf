@@ -1,0 +1,50 @@
+Description: Fix bindings with linux v6.12 and higher
+ Commit 7ed9e09e2d13d5d43385153bba4734cb0eafd7fd in linux (first released
+ in v6.12) replaced the 'pad' field of struct io_uring_getevents_arg with
+ 'min_wait_usec'. The change seems to be backwards-compatible, so that
+ passing a zero (padding) to min_wait_usec will not change the previous
+ behavior of the API. This patch is temporary, upstream should probably
+ regenerate the bindings.
+Author: NoisyCoil <noisycoil@tutanota.com>
+Bug: https://github.com/tokio-rs/io-uring/issues/311
+Last-Update: 2024-12-29
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/sys/sys.rs
++++ b/src/sys/sys.rs
+@@ -2639,7 +2639,7 @@
+ pub struct io_uring_getevents_arg {
+     pub sigmask: __u64,
+     pub sigmask_sz: __u32,
+-    pub pad: __u32,
++    pub min_wait_usec: __u32,
+     pub ts: __u64,
+ }
+ #[test]
+@@ -2685,13 +2685,13 @@
+         )
+     );
+     assert_eq!(
+-        unsafe { ::core::ptr::addr_of!((*ptr).pad) as usize - ptr as usize },
++        unsafe { ::core::ptr::addr_of!((*ptr).min_wait_usec) as usize - ptr as usize },
+         12usize,
+         concat!(
+             "Offset of field: ",
+             stringify!(io_uring_getevents_arg),
+             "::",
+-            stringify!(pad)
++            stringify!(min_wait_usec)
+         )
+     );
+     assert_eq!(
+--- a/src/types.rs
++++ b/src/types.rs
+@@ -236,7 +236,7 @@
+         let args = sys::io_uring_getevents_arg {
+             sigmask: 0,
+             sigmask_sz: 0,
+-            pad: 0,
++            min_wait_usec: 0,
+             ts: 0,
+         };
+ 
