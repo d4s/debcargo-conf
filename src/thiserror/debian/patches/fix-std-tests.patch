@@ -1,0 +1,22 @@
+Author: Maytham Alsudany <maytha8thedev@gmail.com>
+Forwarded: https://github.com/dtolnay/thiserror/pull/409
+Description: Add feature gate to tests that use std
+
+--- a/tests/test_path.rs
++++ b/tests/test_path.rs
+@@ -1,3 +1,5 @@
++#![cfg(feature = "std")]
++
+ use core::fmt::Display;
+ use ref_cast::RefCast;
+ use std::path::{Path, PathBuf};
+--- a/tests/test_expr.rs
++++ b/tests/test_expr.rs
+@@ -90,6 +90,7 @@
+ }
+ 
+ // Regression test for https://github.com/dtolnay/thiserror/issues/335
++#[cfg(feature = "std")]
+ #[test]
+ #[allow(non_snake_case)]
+ fn test_assoc_type_equality_constraint() {
