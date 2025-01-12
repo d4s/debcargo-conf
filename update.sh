@@ -44,6 +44,7 @@ if [ ! -d "$PKGDIR/debian" ]; then
 	cat <<-eof > "$PKGCFG"
 	overlay = "."
 	uploaders = ["$DEBFULLNAME <$DEBEMAIL>"]
+	collapse_features = true
 	eof
 fi
 if [ ! -f "$PKGDIR/debian/copyright" ]; then
