@@ -1,2 +1,3 @@
 relax-deps.diff
 fix-tests-32-bit.diff
+use-thiserror-2.patch
