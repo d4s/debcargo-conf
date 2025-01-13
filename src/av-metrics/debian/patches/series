@@ -1,2 +1,3 @@
 remove-benches.patch
 upgrade-itertools.patch
+use-thiserror-2.patch
