@@ -1,1 +1,2 @@
 remove-unsed-deps.patch
+use-thiserror-2.patch
