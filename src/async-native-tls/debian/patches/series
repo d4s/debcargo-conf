@@ -1,2 +1,3 @@
 relax-deps.diff
 remove-google-test.diff
+use-thiserror-2.patch
