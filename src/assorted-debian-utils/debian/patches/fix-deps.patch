@@ -1,8 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -69,4 +69,4 @@
- default-features = false
- 
- [dependencies.thiserror]
--version = ">= 1, < 3"
-+version = "1"
