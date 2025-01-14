@@ -13,3 +13,4 @@ relax-serde-yaml.diff
 relax-os-str-bytes.diff
 remove-run-script.diff
 relax-git2.diff
+use-thiserror-2.patch

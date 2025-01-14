@@ -360,10 +360,10 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2019-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2019-2024 Paride Legovini <paride@debian.org>
- 2019-2024 Helen Koike <helen@koikeco.de>
- 2019-2024 Sylvestre ledru <sylvestre@debian.org>
+ 2019-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2019-2025 Paride Legovini <paride@debian.org>
+ 2019-2025 Helen Koike <helen@koikeco.de>
+ 2019-2025 Sylvestre ledru <sylvestre@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
