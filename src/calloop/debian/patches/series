@@ -1,2 +1,3 @@
 avoid-freeing-non-open-fd.patch
 relax-nix.patch
+use-thiserror-2.patch
