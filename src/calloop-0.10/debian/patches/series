@@ -2,3 +2,4 @@ relax-deps.diff
 disable-failing-test.diff
 nix-0.27.patch
 nix-0.29.patch
+use-thiserror-2.patch
