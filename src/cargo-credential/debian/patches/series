@@ -1,3 +1,4 @@
 drop-non-linux.patch
 fix-tests.patch
 disable-snapbox.patch
+use-thiserror-2.patch

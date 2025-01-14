@@ -14,8 +14,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2024 Fabian Grünbichler <debian@fabian.gruenbichler.email>
+ 2024-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024-2025 Fabian Grünbichler <debian@fabian.gruenbichler.email>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
