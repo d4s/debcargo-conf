@@ -2,11 +2,11 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -198,7 +198,7 @@ version = "1.0"
- version = "1.0"
+@@ -130,7 +130,7 @@ version = "1.0.142"
+ features = ["derive"]
  
  [dependencies.serde_yaml]
--version = "0.9.28"
+-version = "0.9"
 +version = ">= 0.8.26, < 1.0"
  
  [dependencies.shell-words]

@@ -54,6 +54,13 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
+Files: doc/README-zh.md
+Copyright: 2018-2021 [bat-developers](https://github.com/sharkdp/bat).
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
 Files: src/less.rs
 Copyright:
  1984-2016  Mark Nudelman
@@ -353,10 +360,10 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2019-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2019-2025 Paride Legovini <paride@debian.org>
- 2019-2025 Helen Koike <helen@koikeco.de>
- 2019-2025 Sylvestre ledru <sylvestre@debian.org>
+ 2019-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2019-2024 Paride Legovini <paride@debian.org>
+ 2019-2024 Helen Koike <helen@koikeco.de>
+ 2019-2024 Sylvestre ledru <sylvestre@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0

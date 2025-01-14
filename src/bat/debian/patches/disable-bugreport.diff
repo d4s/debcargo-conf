@@ -2,7 +2,7 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -107,9 +107,9 @@ version = "^1.2"
+@@ -38,9 +38,9 @@ version = "^1.2"
  [dependencies.bincode]
  version = "1.0"
  
@@ -15,7 +15,7 @@ Index: bat/Cargo.toml
  
  [dependencies.bytesize]
  version = "1.3.0"
-@@ -277,7 +277,6 @@ version = "2.5"
+@@ -168,7 +168,6 @@ optional = true
  
  [features]
  application = [

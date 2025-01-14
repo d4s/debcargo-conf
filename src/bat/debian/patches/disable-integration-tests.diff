@@ -1,0 +1,27 @@
+Index: bat/Cargo.toml
+===================================================================
+--- bat.orig/Cargo.toml
++++ bat/Cargo.toml
+@@ -26,6 +26,22 @@ readme = "README.md"
+ categories = ["command-line-utilities"]
+ license = "MIT OR Apache-2.0"
+ repository = "https://github.com/sharkdp/bat"
++autotests = false
++
++[[test]]
++name = "system_wide_config"
++
++[[test]]
++name = "snapshot_tests"
++
++[[test]]
++name = "test_pretty_printer"
++
++[[test]]
++name = "assets"
++
++[[test]]
++name = "no_duplicate_extensions"
+ 
+ [profile.release]
+ lto = true

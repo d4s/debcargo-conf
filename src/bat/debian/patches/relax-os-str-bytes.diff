@@ -2,12 +2,12 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -89,7 +89,7 @@ optional = true
- version = "1.0"
+@@ -107,7 +107,7 @@ version = "0"
+ version = "1.18"
  
- [dependencies.git2]
--version = "0.18"
-+version = "0.19"
+ [dependencies.os_str_bytes]
+-version = "~6.4"
++version = "6.4"
  optional = true
- default-features = false
  
+ [dependencies.path_abs]

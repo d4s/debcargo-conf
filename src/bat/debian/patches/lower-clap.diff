@@ -2,20 +2,20 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -131,7 +131,7 @@ version = "1.0"
+@@ -62,7 +62,7 @@ version = "1.0"
  version = "1"
  
  [dependencies.clap]
--version = "4.4.12"
+-version = "4.4.6"
 +version = "4"
  features = [
      "wrap_help",
      "cargo",
-@@ -253,7 +253,7 @@ version = "0.2.0"
- version = "1.0.86"
+@@ -175,7 +175,7 @@ version = "3.8.0"
+ version = "0.2.0"
  
  [build-dependencies.clap]
--version = "4.4.12"
+-version = "4.4.6"
 +version = "4"
  features = [
      "wrap_help",

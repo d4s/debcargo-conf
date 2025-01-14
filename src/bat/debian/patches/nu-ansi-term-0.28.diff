@@ -8,21 +8,21 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -175,7 +175,7 @@ version = "0.1.11"
+@@ -101,7 +101,7 @@ version = "0.1.9"
  optional = true
  
  [dependencies.nu-ansi-term]
--version = "0.50.0"
+-version = "0.49.0"
 +version = "0"
  
  [dependencies.once_cell]
- version = "1.20"
+ version = "1.18"
 Index: bat/src/printer.rs
 ===================================================================
 --- bat.orig/src/printer.rs
 +++ bat/src/printer.rs
-@@ -716,10 +716,8 @@ impl<'a> Printer for InteractivePrinter<
-                             // Pad the rest of the line.
+@@ -577,10 +577,8 @@ impl<'a> Printer for InteractivePrinter<
+ 
                              if text.len() != text_trimmed.len() {
                                  if let Some(background_color) = background_color {
 -                                    let ansi_style = Style {
@@ -34,7 +34,7 @@ Index: bat/src/printer.rs
  
                                      let width = if cursor_total <= cursor_max {
                                          cursor_max - cursor_total + 1
-@@ -842,10 +840,8 @@ impl<'a> Printer for InteractivePrinter<
+@@ -696,10 +694,8 @@ impl<'a> Printer for InteractivePrinter<
              }
  
              if let Some(background_color) = background_color {
@@ -47,7 +47,7 @@ Index: bat/src/printer.rs
  
                  write!(
                      handle,
-@@ -884,8 +880,8 @@ impl Colors {
+@@ -738,8 +734,8 @@ impl Colors {
      }
  
      fn colored(theme: &Theme, true_color: bool) -> Self {
@@ -58,7 +58,7 @@ Index: bat/src/printer.rs
                  // If the theme provides a gutter foreground color, use it.
                  // Note: It might be the special value #00000001, in which case
                  // to_ansi_color returns None and we use an empty Style
-@@ -893,8 +889,6 @@ impl Colors {
+@@ -747,8 +743,6 @@ impl Colors {
                  Some(c) => to_ansi_color(c, true_color),
                  // Otherwise, use a specific fallback color.
                  None => Some(Fixed(DEFAULT_GUTTER_COLOR)),

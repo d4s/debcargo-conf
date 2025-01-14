@@ -2,15 +2,15 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -320,12 +320,6 @@ paging = [
+@@ -214,12 +214,6 @@ paging = [
  regex-fancy = ["syntect/regex-fancy"]
  regex-onig = ["syntect/regex-onig"]
  
--[target.'cfg(target_os = "macos")'.dependencies.home]
--version = "0.5.9"
+-[target."cfg(target_os = \"macos\")".dependencies.home]
+-version = "0.5.4"
 -
--[target.'cfg(target_os = "macos")'.dependencies.plist]
--version = "1.7.0"
+-[target."cfg(target_os = \"macos\")".dependencies.plist]
+-version = "1.4.3"
 -
  [target."cfg(unix)".dev-dependencies.nix]
  version = ">= 0.24.2, < 1.0"

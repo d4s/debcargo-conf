@@ -2,25 +2,25 @@ Index: bat/Cargo.toml
 ===================================================================
 --- bat.orig/Cargo.toml
 +++ bat/Cargo.toml
-@@ -155,9 +155,9 @@ version = "0.8"
- version = "0.8.0"
+@@ -118,10 +118,6 @@ default-features = false
+ version = "1.8.3"
  optional = true
  
--[dependencies.execute]
--version = "0.2.13"
+-[dependencies.run_script]
+-version = "^0.10.0"
 -optional = true
-+#[dependencies.execute]
-+#version = "0.2.13"
-+#optional = true
- 
- [dependencies.flate2]
+-
+ [dependencies.semver]
  version = "1.0"
-@@ -305,7 +305,7 @@ build-assets = [
+ 
+@@ -196,10 +192,6 @@ build-assets = [
  ]
  default = ["application"]
  git = ["git2"]
--lessopen = ["execute"]
-+#lessopen = ["execute"]
+-lessopen = [
+-    "run_script",
+-    "os_str_bytes",
+-]
  minimal-application = [
      "clap",
      "etcetera",
