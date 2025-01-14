@@ -1,2 +1,4 @@
 disable-tests-missing-data.patch
 relax-dep.diff
+upgrade-criterion.patch
+use-thiserror-2.patch

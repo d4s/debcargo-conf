@@ -28,8 +28,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2019-2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2019-2023 Paride Legovini <paride@debian.org>
+ 2019-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2019-2025 Paride Legovini <paride@debian.org>
 License: MIT
 
 License: MIT
