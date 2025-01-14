@@ -1,0 +1,13 @@
+From: Maytham Alsudany <maytha8thedev@gmail.com>
+Forwarded: not-needed
+Description: Use thiserror 2.x
+ Update to thiserror 2.x as part of the thiserror transition.
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -21,4 +21,4 @@
+ repository = "https://gitlab.com/openpgp-card/openpgp-card"
+ 
+ [dependencies.thiserror]
+-version = "1"
++version = "2"
