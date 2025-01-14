@@ -1,3 +1,4 @@
 no-cloudflare-zlib
 no-zlib-ng
 no-libdeflater
+use-thiserror-2.patch
