@@ -1,0 +1,16 @@
+From: Maytham Alsudany <maytha8thedev@gmail.com>
+Forwarded: not-needed
+Description: Use thiserror 2.x
+ Update to thiserror 2.x as part of the thiserror transition.
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -44,7 +44,7 @@
+ features = ["unbounded_depth"]
+ 
+ [dependencies.thiserror]
+-version = "1.0.31"
++version = "2"
+ 
+ [features]
+ default = []
