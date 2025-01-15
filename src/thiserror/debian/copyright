@@ -4,14 +4,15 @@ Upstream-Contact: David Tolnay <dtolnay@gmail.com>
 Source: https://github.com/dtolnay/thiserror
 
 Files: *
-Copyright: 2019-2022 David Tolnay <dtolnay@gmail.com>
+Copyright: 2019-2025 David Tolnay <dtolnay@gmail.com>
 License: MIT or Apache-2.0
 
 Files: debian/*
 Copyright:
- 2019-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2019-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
  2019 Wolfgang Silbermayr <wolfgang@silbermayr.at>
  2022 Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+ 2025 Maytham Alsudany <maytha8thedev@gmail.com>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
