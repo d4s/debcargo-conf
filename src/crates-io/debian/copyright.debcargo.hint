@@ -14,8 +14,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018-2024 Ximin Luo <infinity0@debian.org>
+ 2018-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2025 Ximin Luo <infinity0@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
