@@ -1,1 +1,2 @@
 disable-snapbox.patch
+use-thiserror-2.patch

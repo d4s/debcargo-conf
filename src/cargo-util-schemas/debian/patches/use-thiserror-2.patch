@@ -1,0 +1,16 @@
+From: Maytham Alsudany <maytha8thedev@gmail.com>
+Forwarded: not-needed
+Description: Use thiserror 2.x
+ Update to thiserror 2.x as part of the thiserror transition.
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -44,7 +44,7 @@
+ version = "0.7.0"
+ 
+ [dependencies.thiserror]
+-version = "1.0.63"
++version = "2"
+ 
+ [dependencies.toml]
+ version = "0.8.19"

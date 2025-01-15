@@ -14,8 +14,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2024 Blair Noctis <ncts@debian.org>
+ 2024-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024-2025 Blair Noctis <ncts@debian.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
