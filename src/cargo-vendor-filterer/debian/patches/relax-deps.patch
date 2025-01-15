@@ -1,0 +1,29 @@
+Description: Relax dependencies and remove unwanted vendored OpenSSL feature
+Author: Julian Andres Klode <juliank@ubuntu.com>
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -47,10 +47,10 @@ version = "1.0"
+ version = "1.0"
+ 
+ [dependencies.cargo-lock]
+-version = "10"
++version = "9"
+ 
+ [dependencies.cargo_metadata]
+-version = "0.18"
++version = "0.15"
+ 
+ [dependencies.clap]
+ version = "4.1"
+@@ -97,10 +97,7 @@ version = "2.3.3"
+ version = "1.17.1"
+ 
+ [dev-dependencies.serial_test]
+-version = "3.1.1"
+-
+-[features]
+-vendored-openssl = ["openssl/vendored"]
++version = "2.0.0"
+ 
+ [target."cfg(not(windows))".dependencies.openssl]
+ version = "0.10.40"

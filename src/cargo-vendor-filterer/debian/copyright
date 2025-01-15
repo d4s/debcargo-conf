@@ -1,0 +1,15 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cargo-vendor-filterer
+Source: https://github.com/coreos/cargo-vendor-filterer
+
+Files: *
+Copyright: 2022- presumably Colin Walters et al (no stated copyright holders)
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+License: Apache-2.0
+
+License: Apache-2.0
+ Debian systems provide the Apache 2.0 license in
+ /usr/share/common-licenses/Apache-2.0
