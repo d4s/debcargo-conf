@@ -1,7 +1,9 @@
---- a/Cargo.toml	2024-03-26 21:51:13.242049067 +0100
-+++ b/Cargo.toml	2024-03-26 21:51:45.692048094 +0100
-@@ -32,7 +32,7 @@
- repository = "https://github.com/Keats/rust-bcrypt"
+Index: bcrypt/Cargo.toml
+===================================================================
+--- bcrypt.orig/Cargo.toml
++++ bcrypt/Cargo.toml
+@@ -41,7 +41,7 @@ name = "bcrypt"
+ path = "src/lib.rs"
  
  [dependencies.base64]
 -version = "0.22"
