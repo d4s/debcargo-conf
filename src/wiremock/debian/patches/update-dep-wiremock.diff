@@ -1,5 +1,5 @@
 Description: relax deps and fix lifespan traits (w/o async_trait)
-Author: eevelweezel, eevel.weezel@gmail.com
+Author: eevelweezel <eevel.weezel@gmail.com>
 Last-Update: 2025-01-26
 ---
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
