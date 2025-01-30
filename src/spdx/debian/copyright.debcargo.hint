@@ -1,0 +1,2643 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: spdx
+Upstream-Contact:
+ Embark <opensource@embark-studios.com>
+ Jake Shadle <jake.shadle@embark-studios.com>
+Source: https://github.com/EmbarkStudios/spdx
+
+Files: *
+Copyright:
+ FIXME (overlay) UNKNOWN-YEARS Embark <opensource@embark-studios.com>
+ FIXME (overlay) UNKNOWN-YEARS Jake Shadle <jake.shadle@embark-studios.com>
+License: MIT or Apache-2.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: LICENSE-MIT
+Copyright: 2019 Embark Studios
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/exceptions/Autoconf-exception-3.0
+Copyright: 2009 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/exceptions/GCC-exception-3.1
+Copyright: 2009 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/exceptions/LLGPL
+Copyright: 2016 Franz Inc., Berkeley, CA 94704
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/exceptions/mxml-exception
+Copyright: 2003-2024 by Michael R Sweet
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AAL
+Copyright: 2002 by AUTHOR PROFESSIONAL IDENTIFICATION * URL "PROMOTIONAL SLOGAN FOR AUTHOR'S PROFESSIONAL PRACTICE"
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AFL-1.1
+Copyright: 2002 Lawrence E. Rosen. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AFL-1.2
+Copyright: 2002 Lawrence E. Rosen. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AFL-2.0
+Copyright: 2003 Lawrence E. Rosen.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AFL-2.1
+Copyright: 2003-2004 Lawrence E. Rosen. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AFL-3.0
+Copyright: 2005 Lawrence Rosen. Permission is granted to copy, distribute, or communicate this License without modification. Nothing in this License permits You to modify this License as applied to the Original Work or to Derivative Works. However, You may modify the text of this License and copy, distribute or communicate your modified version (the "Modified License") and apply it to other original works of authorship subject to the following conditions: (i) You may not indicate in any way that your Modified License is the "Academic Free License" or "AFL" and you may not use those names in the name of your Modified License; (ii) You must replace the notice specified in the first paragraph above with the notice "Licensed under <insert your license name here>" or with a notice of your own that is not confusingly similar to the notice in this License; and (iii) You may not claim that your original works are open source software unless your Modified License has been approved by Open Source Initiative (OSI) and You comply with its license review and certification process.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AGPL-1.0
+Copyright:
+ 2002 Affero Inc. 510 Third Street - Suite 225, San Francisco, CA 94107, USA
+ 1989, 1991 Free Software Foundation, Inc. made with their permission. Section 2(d) has been added to cover use of software over a computer network.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AGPL-1.0-only
+Copyright:
+ 2002 Affero Inc. 510 Third Street - Suite 225, San Francisco, CA 94107, USA
+ 1989, 1991 Free Software Foundation, Inc. made with their permission. Section 2(d) has been added to cover use of software over a computer network.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AGPL-1.0-or-later
+Copyright:
+ 2002 Affero Inc. 510 Third Street - Suite 225, San Francisco, CA 94107, USA
+ 1989, 1991 Free Software Foundation, Inc. made with their permission. Section 2(d) has been added to cover use of software over a computer network.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AGPL-3.0
+Copyright: 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AGPL-3.0-only
+Copyright: 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AGPL-3.0-or-later
+Copyright: 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AMD-newlib
+Copyright: 1989, 1990 Advanced Micro Devices, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AMDPLPA
+Copyright: 2006, 2007 Advanced Micro Devices, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AML
+Copyright: 2006 by Apple Computer, Inc., All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AML-glslang
+Copyright: 2002, NVIDIA Corporation.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/AMPAS
+Copyright: 2006 Academy of Motion Picture Arts and Sciences ("A.M.P.A.S."). Portions contributed by others as indicated. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/APAFML
+Copyright: 1985, 1987, 1989, 1990, 1991, 1992, 1993, 1997 Adobe Systems Incorporated. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/APSL-1.0
+Copyright: 1999 Apple Computer, Inc. All Rights Reserved. This file contains Original Code and/or Modifications of Original Code as defined in and that are subject to the Apple Public Source License Version 1.0 (the 'License'). You may not use this file except in compliance with the License. Please obtain a copy of the License at http://www.apple.com/publicsource and read it before using this file.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/APSL-1.1
+Copyright: 1999-2000 Apple Computer, Inc.  All Rights Reserved.  This file contains Original Code and/or Modifications of Original Code as defined in and that are subject to the Apple Public Source License Version 1.1 (the "License").  You may not use this file except in compliance with the License.  Please obtain a copy of the License at http://www.apple.com/publicsource and read it before using this file.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/APSL-1.2
+Copyright: 1999-2001 Apple Computer, Inc. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/APSL-2.0
+Copyright: 1999-2007 Apple Inc.  All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Abstyles
+Copyright: 1991, 1992 Hans-Hermann Bode
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Adobe-2006
+Copyright: 2006 Adobe Systems Incorporated. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Adobe-Display-PostScript
+Copyright: 1988,1991 Adobe Systems Incorporated.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Adobe-Glyph
+Copyright: 1997,1998,2002,2007 Adobe Systems Incorporated
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Aladdin
+Copyright: 1994, 1995, 1997, 1998, 1999 Aladdin Enterprises, Menlo Park, California, U.S.A. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Apache-1.0
+Copyright: 1995-1999 The Apache Group. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Apache-1.1
+Copyright: 2000 The Apache Software Foundation.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Arphic-1999
+Copyright: 1999 Arphic Technology Co., Ltd.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Artistic-2.0
+Copyright: 2000-2006, The Perl Foundation.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-2-Clause-FreeBSD
+Copyright: 1992-2012 The FreeBSD Project. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-2-Clause-NetBSD
+Copyright: 2008 The NetBSD Foundation, Inc. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-2-Clause-first-lines
+Copyright: 2006,2007,2009 NTT (Nippon Telegraph and Telephone
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-3-Clause-LBNL
+Copyright: 2003, The Regents of the University of California, through Lawrence Berkeley National Laboratory (subject to receipt of any required approvals from the U.S. Dept. of Energy). All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-3-Clause-No-Nuclear-License
+Copyright: 1994-2009 Sun Microsystems, Inc. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-3-Clause-No-Nuclear-License-2014
+Copyright: 2008, 2014 Oracle and/or its affiliates. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-3-Clause-No-Nuclear-Warranty
+Copyright: 2003-2005 Sun Microsystems, Inc. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-3-Clause-Sun
+Copyright: 2001-2013 Oracle and/or its affiliates. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-3-Clause-flex
+Copyright:
+ 2001, 2002, 2003, 2004, 2005, 2006, 2007 The Flex Project.
+ 1990, 1997 The Regents of the University of California.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-4.3RENO
+Copyright: 1987 Regents of the University of California.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-4.3TAHOE
+Copyright: 1987 Regents of the University of California. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Advertising-Acknowledgement
+Copyright: 2001 David Giffin.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Attribution-HPND-disclaimer
+Copyright: 1998-2003 Carnegie Mellon University.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Inferno-Nettverk
+Copyright: 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Source-Code
+Copyright: 2011, Deusty, LLC
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Source-beginning-file
+Copyright: 1997 Justin T. Gibbs.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Systemics
+Copyright: 1995, 1996 Systemics Ltd (http://www.systemics.com/)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BSD-Systemics-W3Works
+Copyright:
+ 1995, 1996 Systemics Ltd (http://www.systemics.com/)
+ 2000 W3Works, LLC.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/BUSL-1.1
+Copyright: 2017 MariaDB Corporation Ab, All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Baekmuk
+Copyright: 1986-2002 Kim Jeong-Hwan All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Bitstream-Charter
+Copyright: 1989-1992, Bitstream Inc., Cambridge, MA.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Bitstream-Vera
+Copyright: 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Boehm-GC-without-fee
+Copyright:
+ 2000
+ 2001, 2013. Oracle and/or its affiliates.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Borceux
+Copyright: 1993 Francis Borceux
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Brian-Gladman-2-Clause
+Copyright: 1998-2013, Brian Gladman, Worcester, UK. All
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Brian-Gladman-3-Clause
+Copyright: 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/CDL-1.0
+Copyright: 2001 Apple Computer, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/CMU-Mach
+Copyright: 1991,1990,1989 Carnegie Mellon University
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/CMU-Mach-nodoc
+Copyright: 2002 Naval Research Laboratory (NRL/CCS)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/CNRI-Jython
+Copyright: 1996-1999 Corporation for National Research Initiatives; All Rights Reserved” are both retained in the Software, alone or in any derivative version prepared by Licensee.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/CNRI-Python-GPL-Compatible
+Copyright: 1995-2001 Corporation for National Research Initiatives; All Rights Reserved" are retained in Python 1.6.1 alone or in any derivative version prepared by Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substitute the following text (omitting the quotes): "Python 1.6.1 is made available subject to the terms and conditions in CNRI's License Agreement. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl.handle.net/1895.22/1013".
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Catharon
+Copyright:
+ 2000 by Catharon Productions, Inc.
+ 2000  by  Catharon
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Community-Spec-1.0
+Copyright: 2020
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Condor-1.1
+Copyright: 1990-2006 Condor Team, Computer Sciences Department, University of Wisconsin-Madison, Madison, WI. All Rights Reserved. For more information contact: Condor Team, Attention: Professor Miron Livny, Dept of Computer Sciences, 1210 W. Dayton St., Madison, WI 53706-1685, (608) 262-0856 or miron@cs.wisc.edu.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Cornell-Lossless-JPEG
+Copyright: 1993 Cornell University, Kongji Huang
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Cronyx
+Copyright:
+ 1994-1995 Cronyx Ltd.
+ 1996 by Sergey Vovk
+ 1999-2000 by Serge Winitzki
+ 1996-2000 by Andrey A. Chernov, Moscow, Russia.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Crossword
+Copyright: 1995-2009 Gerd Neugebauer
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Cube
+Copyright: 2001-2003 Wouter van Oortmerssen.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/DEC-3-Clause
+Copyright: 1997 Digital Equipment Corporation.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/DOC
+Copyright: 1993-2009, all rights reserved. Since DOC software is open-source, freely available software, you are free to use, modify, copy, and distribute--perpetually and irrevocably--the DOC software source code and object code produced from the source, as well as copy and distribute modified versions of this software. You must, however, include this copyright statement along with any code built using DOC software that you release. No copyright statement needs to be provided if you just ship binary executables of your software products.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/DocBook-Schema
+Copyright: 1992-2011 HaL Computer Systems, Inc.,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/DocBook-Stylesheet
+Copyright: 2005 Norman Walsh, Sun Microsystems,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/DocBook-XML
+Copyright:
+ 1999-2007 Norman Walsh
+ 2003 Jiří Kosek
+ 2004-2007 Steve Ball
+ 2005-2014 The DocBook Project
+ 2011-2012 O'Reilly Media
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Dotseqn
+Copyright: 1995 by Donald Arseneau
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/EUDatagrid
+Copyright: 2001 EU DataGrid. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Entessa
+Copyright: 2003 Entessa, LLC. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ErlPL-1.1
+Copyright: 1999, Ericsson Utvecklings AB. All Rights Reserved.''
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Eurosym
+Copyright: 1999-2002 Henrik Theiling
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FBM
+Copyright: 1989 by Michael Mauldin.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FDK-AAC
+Copyright: 1995 - 2012 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FSFAP-no-warranty-disclaimer
+Copyright: 2008 Micah J. Cowan
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FSFUL
+Copyright: 1992-1996, 1998-2012 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FSFULLR
+Copyright: 1996-2006 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FSFULLRWD
+Copyright: 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FTL
+Copyright:
+ 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner Lemberg
+ 1996-2000 by David Turner, Robert Wilhelm, and Werner Lemberg. All rights reserved except as specified below.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/FreeBSD-DOC
+Copyright:
+ 1994-2021 The FreeBSD Project. All rights reserved.
+ 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Furuseth
+Copyright:
+ 1999-2008 Howard Y.H. Chu.
+ 1999-2008 Symas Corporation.
+ 1998-2003 Hallvard B. Furuseth.
+ 2007-2011 Gavin Henry.
+ 2007-2011 Suretec Systems Ltd.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GD
+Copyright:
+ 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.
+ 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.
+ 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.
+ 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.
+ 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+ 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+ 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).
+ 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.
+ 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.
+ 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.
+ 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.
+ 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1-invariants-only
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1-invariants-or-later
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1-no-invariants-only
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1-no-invariants-or-later
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1-only
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.1-or-later
+Copyright: 2000 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2-invariants-only
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2-invariants-or-later
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2-no-invariants-only
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2-no-invariants-or-later
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2-only
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.2-or-later
+Copyright: 2000,2001,2002 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3-invariants-only
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3-invariants-or-later
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3-no-invariants-only
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3-no-invariants-or-later
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3-only
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GFDL-1.3-or-later
+Copyright: 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GL2PS
+Copyright: 2003, Christophe Geuzaine
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-1.0
+Copyright: 1989 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-1.0+
+Copyright: 1989 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-1.0-only
+Copyright: 1989 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-1.0-or-later
+Copyright: 1989 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-2.0
+Copyright: 1989, 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-2.0+
+Copyright: 1989, 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-2.0-only
+Copyright: 1989, 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-2.0-or-later
+Copyright: 1989, 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-3.0
+Copyright: 2007 Free Software Foundation, Inc. <https://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-3.0+
+Copyright: 2007 Free Software Foundation, Inc. <https://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-3.0-only
+Copyright: 2007 Free Software Foundation, Inc. <https://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-3.0-or-later
+Copyright: 2007 Free Software Foundation, Inc. <https://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-3.0-with-GCC-exception
+Copyright: 2009 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/GPL-3.0-with-autoconf-exception
+Copyright: 2009 Free Software Foundation, Inc. >http://fsf.org/<
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Glulxe
+Copyright: 1999-2010 by Andrew Plotkin.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HP-1986
+Copyright: 1986 HEWLETT-PACKARD COMPANY
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HP-1989
+Copyright:
+ 1990- 1993, 1996 Open Software Foundation, Inc.
+ 1989 by Hewlett-Packard Company, Palo Alto, Ca.
+ 1998 Microsoft.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-Fenneberg-Livingston
+Copyright: 1995,1996,1997,1998 Lars Fenneberg <lf@elemental.net>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-Intel
+Copyright: 1993 Intel Corporation
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-Netrek
+Copyright: 1995 S. M. Patel (smpatel@wam.umd.edu)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-Pbmplus
+Copyright: 1991 by Jef Poskanzer.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-UC
+Copyright: 1989 Regents of the University of California
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-UC-export-US
+Copyright: 1985, 1990 Regents of the University of California.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-export-US
+Copyright: 1990 by the Massachusetts Institute of Technology
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-export-US-acknowledgement
+Copyright: 1994 by the University of Southern California
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-export-US-modify
+Copyright:
+ 1994 CyberSAFE Corporation.
+ 1990,1991,2007,2008 by the Massachusetts
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-export2-US
+Copyright: 2004-2008 Apple Inc.  All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-merchantability-variant
+Copyright: 2004 Christian Groessler <chris@groessler.org>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-sell-regexpr
+Copyright: 1991 Tatu Ylonen, Espoo, Finland
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-sell-variant
+Copyright: 1993 by OpenVision Technologies, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HPND-sell-variant-MIT-disclaimer
+Copyright: 1999,2000,2001 Jim Knoble
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/HaskellReport
+Copyright: 2010 Simon Marlow
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ICU
+Copyright: 1995-2014 International Business Machines Corporation and others
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/IJG
+Copyright: 1991-1998, Thomas G. Lane. All Rights Reserved except as specified below.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/IJG-short
+Copyright: 1991, 1992, Thomas G. Lane.  All Rights
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/IPL-1.0
+Copyright: 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ISC
+Copyright:
+ 2004-2010 by Internet Systems Consortium, Inc. ("ISC")
+ 1995-2003 by Internet Software Consortium
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ISC-Veillard
+Copyright: 2003-2012 Daniel Veillard.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ImageMagick
+Copyright: 1999-2013 ImageMagick Studio LLC, a non-profit organization dedicated to making software imaging solutions freely available.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Info-ZIP
+Copyright: 1990-2009 Info-ZIP. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/InnoSetup
+Copyright:
+ 1997-2024 Jordan Russell. All rights reserved.
+ 2000-2024 Martijn Laan. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Intel
+Copyright: 1996-2000 Intel Corporation All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Intel-ACPI
+Copyright: 1999-2005, Intel Corp. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/JPNIC
+Copyright:
+ 2000-2002 Japan Network Information Center.  All rights reserved.
+ 2000-2002 Japan Network Information Center.  All rights
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/JSON
+Copyright: 2002 JSON.org
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/JasPer-2.0
+Copyright:
+ 2001-2006 Michael David Adams
+ 1999-2000 Image Power, Inc.
+ 1999-2000 The University of British Columbia
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Kastrup
+Copyright: 2001 by David Kastrup
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Kazlib
+Copyright: 1999 Kaz Kylheku
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.0
+Copyright: 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.0+
+Copyright: 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.0-only
+Copyright: 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.0-or-later
+Copyright: 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.1
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.1+
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.1-only
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-2.1-or-later
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-3.0
+Copyright:
+ 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-3.0+
+Copyright:
+ 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ 2007 Free Software Foundation, Inc. <https://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-3.0-only
+Copyright:
+ 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LGPL-3.0-or-later
+Copyright:
+ 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LOOP
+Copyright:
+ 1986 by the Massachusetts Institute of Technology.
+ 1989, 1990, 1991, 1992 by Symbolics, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPD-document
+Copyright: 1996 L. Peter Deutsch
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPL-1.02
+Copyright: 2003, Lucent Technologies Inc. and others. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPPL-1.0
+Copyright:
+ 1999 LaTeX3 Project
+ 2001 M. Y. Name
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPPL-1.1
+Copyright:
+ 1999 LaTeX3 Project
+ 2001 M. Y. Name
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPPL-1.2
+Copyright:
+ 1999 LaTeX3 Project
+ 2001 M. Y. Name
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPPL-1.3a
+Copyright:
+ 1999 2002-04 LaTeX3
+ 2003 M. Y. Name
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/LPPL-1.3c
+Copyright:
+ 1999 2002-2008 LaTeX3 Project
+ 2005 M. Y. Name
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Latex2e
+Copyright:
+ 2007, 2008, 2009, 2010 Karl Berry.
+ 1988, 1994, 2007 Stephen Gilmore.
+ 1994, 1995, 1996 Torsten Martinsen.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Leptonica
+Copyright: 2001 Leptonica.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Libpng
+Copyright:
+ 2004, 2006-2010 Glenn Randers-Pehrson, and are distributed according to the same disclaimer and license as libpng-1.2.5 with the following individual added to the list of Contributing Authors
+ 2000-2002 Glenn Randers-Pehrson, and are distributed according to the same disclaimer and license as libpng-1.0.6 with the following individuals added to the list of Contributing Authors
+ 1998, 1999 Glenn Randers-Pehrson, and are distributed according to the same disclaimer and license as libpng-0.96, with the following individuals added to the list of Contributing Authors:
+ 1996, 1997 Andreas Digger
+ 1995, 1996 Guy Eric Schalnat, Group 42, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Lucida-Bitmap-Fonts
+Copyright: 1989 Sun Microsystems, Inc. Sun design patents
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MIPS
+Copyright: 1992, 1991, 1990 MIPS Computer Systems, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MIT-Khronos-old
+Copyright: 2014-2020 The Khronos Group Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MIT-Wu
+Copyright: 2003-2005  Tom Wu
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MIT-advertising
+Copyright: 2000-2008 Carsten Haitzler, Geoff Harrison and various contributors Copyright (C) 2004-2008 Kim Woelders
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MIT-enna
+Copyright: 2000 Carsten Haitzler and various contributors (see AUTHORS)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MMIXware
+Copyright: 1999 Donald E. Knuth
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MPEG-SSG
+Copyright: 1994, MPEG Software Simulation Group. All Rights Reserved. */
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MTLL
+Copyright: 2007 The Trustees of Indiana University.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Mackerras-3-Clause
+Copyright: 1995 Eric Rosenquist.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Mackerras-3-Clause-acknowledgment
+Copyright: 1993-2002 Paul Mackerras. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/MakeIndex
+Copyright:
+ 1989 by Chen & Harrison International Systems, Inc.
+ 1988 by Olivetti Research Center
+ 1987 by Regents of the University of California
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Martin-Birgmeier
+Copyright: 1993 Martin Birgmeier All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/McPhee-slideshow
+Copyright: 2001, Patrick TJ McPhee
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Motosoto
+Copyright: 2000-2001 Motosoto.com B.V.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Multics
+Copyright:
+ 1972 by Massachusetts Institute of Technology and Honeywell Information Systems Inc.
+ 2006 by BULL HN Information Systems Inc.
+ 2006 by Bull SAS All Rights Reserved
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Mup
+Copyright: 1995-2012 by Arkkra Enterprises. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NAIST-2003
+Copyright: 2000, 2001, 2002, 2003 Nara Institute of Science
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NBPL-1.0
+Copyright: 1998, Net Boolean Incorporated, Redwood City, California, USA All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NCL
+Copyright: 2004 the University Corporation for Atmospheric
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NGPL
+Copyright:
+ 1989 M. Stephenson)
+ 1988 Richard M. Stallman)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NICTA-1.0
+Copyright: 2004 National ICT Australia Ltd
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NPL-1.0
+Copyright: 1998 Netscape Communications Corporation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NPL-1.1
+Copyright: 1998-1999 Netscape Communications Corporation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NPOSL-3.0
+Copyright: 2005 Lawrence Rosen. Permission is granted to copy, distribute, or communicate this License without modification. Nothing in this License permits You to modify this License as applied to the Original Work or to Derivative Works. However, You may modify the text of this License and copy, distribute or communicate your modified version (the "Modified License") and apply it to other original works of authorship subject to the following conditions: (i) You may not indicate in any way that your Modified License is the "Open Software License" or "OSL" and you may not use those names in the name of your Modified License; (ii) You must replace the notice specified in the first paragraph above with the notice "Licensed under <insert your license name here>" or with a notice of your own that is not confusingly similar to the notice in this License; and (iii) You may not claim that your original works are open source software unless your Modified License has been approved by Open Source Initiative (OSI) and You comply with its license review and certification process.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Net-SNMP
+Copyright:
+ 1989, 1991, 1992 by Carnegie Mellon University
+ 1996, 1998-2000 The Regents of the University of California
+ 2001-2003, Networks Associates Technology, Inc All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ 2001-2003, Cambridge Broadband Ltd. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ 2003 Sun Microsystems, Inc., 4150 Network Circle, Santa Clara, California 95054, U.S.A. All rights reserved.
+ 2003-2009, Sparta, Inc All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ 2004, Cisco, Inc and Information Network Center of Beijing University of Posts and Telecommunications. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ 2007 Apple Inc. All rights reserved.
+ 2009, ScienceLogic, LLC All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/NetCDF
+Copyright: 1993-2014 University Corporation for Atmospheric Research/Unidata
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Newsletr
+Copyright: 1989--2004 by Hunter Goatley.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Noweb
+Copyright: 1989-2000 by Norman Ramsey. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Nunit
+Copyright:
+ 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov, Charlie Poole
+ 2000-2004 Philip A. Craig
+ 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov, Charlie Poole or Copyright © 2000-2004 Philip A. Craig
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OCLC-2.0
+Copyright:
+ 2002. OCLC Online Computer Library Center, Inc. All Rights Reserved
+ 2000- (insert then current year) OCLC Online Computer Library Center, Inc. and other contributors. All rights reserved. The contents of this file, as updated from time to time by the OCLC Office of Research, are subject to OCLC Research Public License Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a current copy of the License at http://purl.oclc.org/oclc/research/ORPL/. Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. This software consists of voluntary contributions made by many individuals on behalf of OCLC Research. For more information on OCLC Research, please see http://www.oclc.org/research/. The Original Code is ______________________________. The Initial Developer of the Original Code is ________________________. Portions created by ______________________ are Copyright (C) _____ _______________________. All Rights Reserved. Contributor(s): ______________________________________."
+ 2000- (insert then current year) OCLC Online Computer Library Center, Inc. and other contributors. All rights reserved."
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OFFIS
+Copyright: 1994-2001, OFFIS
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-1.1
+Copyright: 1998, The OpenLDAP Foundation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-1.2
+Copyright: 1998, The OpenLDAP Foundation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-1.3
+Copyright: 1998-1999, The OpenLDAP Foundation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-1.4
+Copyright: 1998-1999, The OpenLDAP Foundation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.0
+Copyright: 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.0.1
+Copyright: 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.1
+Copyright: 1999-2000, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.2
+Copyright: 1999-2000, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.2.1
+Copyright: 1999-2000 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.2.2
+Copyright: 1999-2000 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.3
+Copyright: 1999-2000 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.4
+Copyright: 1999-2000 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.5
+Copyright: 1999-2001 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.6
+Copyright: 1999-2001 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distributed verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.7
+Copyright: 1999-2001 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distribute verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OLDAP-2.8
+Copyright: 1999-2003 The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved. Permission to copy and distribute verbatim copies of this document is granted.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OSL-1.0
+Copyright: 2002 Lawrence E. Rosen. All rights reserved. Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OSL-1.1
+Copyright: 2002 Lawrence E. Rosen. All rights reserved. Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OSL-2.0
+Copyright: 2003 Lawrence E. Rosen. All rights reserved. Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OSL-2.1
+Copyright: 2003-2004 Lawrence E. Rosen. All rights reserved. Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OSL-3.0
+Copyright: 2005 Lawrence Rosen. Permission is granted to copy, distribute, or communicate this License without modification. Nothing in this License permits You to modify this License as applied to the Original Work or to Derivative Works. However, You may modify the text of this License and copy, distribute or communicate your modified version (the "Modified License") and apply it to other original works of authorship subject to the following conditions: (i) You may not indicate in any way that your Modified License is the "Open Software License" or "OSL" and you may not use those names in the name of your Modified License; (ii) You must replace the notice specified in the first paragraph above with the notice "Licensed under <insert your license name here>" or with a notice of your own that is not confusingly similar to the notice in this License; and (iii) You may not claim that your original works are open source software unless your Modified License has been approved by Open Source Initiative (OSI) and You comply with its license review and certification process.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OpenPBS-2.3
+Copyright: 1999-2000 Veridian Information Solutions, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OpenSSL
+Copyright:
+ 1998-2008 The OpenSSL Project. All rights reserved.
+ 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/OpenSSL-standalone
+Copyright: 1998-2019 The OpenSSL Project.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/PHP-3.0
+Copyright: 1999 - 2006 The PHP Group. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/PHP-3.01
+Copyright: 1999 - 2012 The PHP Group. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/PSF-2.0
+Copyright: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Plexus
+Copyright: 2002 (C) The Codehaus. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/PostgreSQL
+Copyright:
+ 1996-2010, The PostgreSQL Global Development Group
+ 1994, The Regents of the University of California
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Python-2.0
+Copyright:
+ 2001, 2002, 2003, 2004, 2005, 2006 Python Software Foundation; All Rights Reserved" are retained in Python alone or in any derivative version prepared by Licensee.
+ 1991 - 1995, Stichting Mathematisch Centrum Amsterdam, The Netherlands. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Python-2.0.1
+Copyright:
+ 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+ 1991 - 1995, Stichting Mathematisch Centrum Amsterdam,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/QPL-1.0
+Copyright: 1999-2005 Trolltech AS, Norway.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/QPL-1.0-INRIA-2004
+Copyright: 1999 Troll Tech AS, Norway.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Qhull
+Copyright: 1993-2003
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/RHeCos-1.1
+Copyright:
+ 1998, 1999, 2000 Red Hat, Inc. All Rights Reserved."
+ 1998, 1999, 2000 Red Hat, Inc. (http://www.redhat.com/). All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/RPL-1.1
+Copyright:
+ 2001-2002 Technical Pursuit Inc., All Rights Reserved.
+ 1999-2002 Technical Pursuit Inc., All Rights Reserved. Patent Pending, Technical Pursuit Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/RPL-1.5
+Copyright: 2001-2007 Technical Pursuit Inc., All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/RPSL-1.0
+Copyright: 1995-2002 RealNetworks, Inc. and/or its licensors. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/RSA-MD
+Copyright: 1991-2, RSA Data Security, Inc. Created 1991. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/RSCPL
+Copyright: 1995-1999. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Ruby-pty
+Copyright: 1998 by Akinori Ito.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SCEA
+Copyright: 2005 Sony Computer Entertainment Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SGI-OpenGL
+Copyright: 1993, Silicon Graphics, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SISSL-1.2
+Copyright: 2001 Sun Microsystems, Inc."
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SMAIL-GPL
+Copyright:
+ 1988 Landon Curt Noll & Ronald S. Karr
+ 1992 Ronald S. Karr
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SMLNJ
+Copyright: 2001-2011 by The Fellowship of SML/NJ Copyright (c) 1989-2001 by Lucent Technologies
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SMPPL
+Copyright: 1997-2002 National Security Agency
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SSH-OpenSSH
+Copyright: 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SSLeay-standalone
+Copyright: 1995-1998 Eric Young (eay@cryptsoft.com)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SSPL-1.0
+Copyright: 2018 MongoDB, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Saxpath
+Copyright: 2000-2002 werken digital.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Sendmail
+Copyright:
+ 1998-2010 Sendmail, Inc. All rights reserved."
+ 1988, 1993 The Regents of the University of California. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Sendmail-8.23
+Copyright:
+ 1998-2014 Proofpoint, Inc. All rights reserved."
+ 1988, 1993 The Regents of the University of California. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Sleepycat
+Copyright:
+ 1990-1999 Sleepycat Software. All rights reserved.
+ 1990, 1993, 1994, 1995 The Regents of the University of California. All rights reserved.
+ 1995, 1996 The President and Fellows of Harvard University. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Soundex
+Copyright: 1998-2007 by Mark Mielke
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Spencer-86
+Copyright: 1986 by University of Toronto. Written by Henry Spencer. Not derived from licensed software.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Spencer-94
+Copyright: 1992, 1993, 1994 Henry Spencer.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Spencer-99
+Copyright: 1998, 1999 Henry Spencer. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/StandardML-NJ
+Copyright:
+ 2001-2011 by The Fellowship of SML/NJ
+ 1989-2001 by Lucent Technologies
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SugarCRM-1.1.3
+Copyright: 2004 SugarCRM, Inc.;
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Sun-PPP
+Copyright: 2001 by Sun Microsystems, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Sun-PPP-2000
+Copyright: 2000 by Sun Microsystems, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/SunPro
+Copyright: 1993 by Sun Microsystems, Inc. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TAPR-OHL-1.0
+Copyright: 2007 TAPR - http://www.tapr.org/OHL
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TCP-wrappers
+Copyright: 1995 by Wietse Venema. All rights reserved. Some individual files may be covered by other copyrights.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TGPPL-1.0
+Copyright: 2007 Zooko
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TMate
+Copyright: 2004-2012 TMate Software. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TORQUE-1.1
+Copyright: 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TOSL
+Copyright: 2006 Mike Mintz and Robert Ekendahl. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TPDL
+Copyright: 1996-2010 David Muir Sharnoff. Copyright (C) 2011 Google, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TTWL
+Copyright:
+ 1996-2002,2005,2006 David Muir Sharnoff.
+ 2005 Aristotle Pagaltzis
+ 2012-2013 Google, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TU-Berlin-1.0
+Copyright: 1992 by Jutta Degener and Carsten Bormann,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TU-Berlin-2.0
+Copyright: 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ThirdEye
+Copyright: 1984 by Third Eye Software, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/TrustedQSL
+Copyright: 2001-2015 American Radio Relay League, Inc. All rights
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/UCAR
+Copyright: 2014 University Corporation for Atmospheric Research and contributors.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/UCL-1.0
+Copyright: 2005 Lawrence Rosen and Copyright (c) 2017 Nigel Tzeng. Permission is granted to copy, distribute, or communicate this License without modification. Nothing in this License permits You to modify this License as applied to the Original Work or to Derivative Works. However, You may modify the text of this License and copy, distribute or communicate your modified version (the "Modified License") and apply it to other original works of authorship subject to the following conditions: (i) You may not indicate in any way that your Modified License is the "Open Software License" or "OSL" or the "Upstream Compatibility License" or "UCL" and you may not use those names in the name of your Modified License; (ii) You must replace the notice specified in the first paragraph above with the notice "Licensed under <insert your license name here>" or with a notice of your own that is not confusingly similar to the notice in this License; and (iii) You may not claim that your original works are open source software unless your Modified License has been approved by Open Source Initiative (OSI) and You comply with its license review and certification process.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Unicode-3.0
+Copyright: 1991-2023 Unicode, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Unicode-DFS-2015
+Copyright: 1991-2015 Unicode, Inc. All rights reserved. Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Unicode-DFS-2016
+Copyright: 1991-2016 Unicode, Inc. All rights reserved. Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Unicode-TOU
+Copyright: 1991-2014 Unicode, Inc. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/UnixCrypt
+Copyright: 1996 Aki Yoshida. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/VOSTROM
+Copyright: 2007 VOSTROM Holdings, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/VSL-1.0
+Copyright: 2000 Vovida Networks, Inc. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/W3C-19980720
+Copyright: 1994-2002 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/WTFPL
+Copyright: 2004 Sam Hocevar <sam@hocevar.net>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Watcom-1.0
+Copyright: 1983-2002 Sybase, Inc. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Widget-Workshop
+Copyright: 1996 Widget Workshop, Inc. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/X11
+Copyright: 1996 X Consortium
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/X11-swapped
+Copyright: 2008-2010 Derick Eddington.  All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/XFree86-1.1
+Copyright: 1994-2006 The XFree86 Project, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Xdebug-1.03
+Copyright: 2003-2022 Derick Rethans. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Xerox
+Copyright: 1995, 1996 Xerox Corporation. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Xnet
+Copyright: 2000-2001 X.Net, Inc. Lafayette, California, USA
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Zeeff
+Copyright: 1988 Jon Zeeff (zeeff@b-tech.ann-arbor.mi.us)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/Zend-2.0
+Copyright: 1999-2002 Zend Technologies Ltd. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/bcrypt-Solar-Designer
+Copyright: 1998-2014 Solar Designer and it is hereby released to the
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/bzip2-1.0.5
+Copyright:
+ 1996-2007 Julian Seward
+ 1996-2007 Julian Seward. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/bzip2-1.0.6
+Copyright: 1996-2010 Julian R Seward. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/checkmk
+Copyright: 2006, 2010  Micah Cowan
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/curl
+Copyright: 1996 - 2015, Daniel Stenberg, <daniel@haxx.se>.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/dtoa
+Copyright: 1991, 2000, 2001 by Lucent Technologies.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/eCos-2.0
+Copyright: 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/fwlw
+Copyright: 1993,1995 by Donald Arseneau
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/gSOAP-1.3b
+Copyright:
+ 2001-2004 Robert A. van Engelen, Genivia inc. All Rights Reserved.
+ 2001-2009 Robert A. van Engelen, Genivia inc. All Rights Reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/generic-xts
+Copyright:
+ 2008, Damien Miller
+ 2011, Alex Hornung
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/gnuplot
+Copyright: 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/gtkbook
+Copyright: 2005 Syd Logan, All Rights Reserved
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/iMatix
+Copyright:
+ 1991-2000 iMatix Corporation. You may use it and distribute it according to this following License Agreement. If you do not agree with these terms, please remove the Product from your system. By incorporating the Product in your work or distributing the Product to others you implicitly agree to these license terms.
+ 1991-2000 iMatix Corporation, with exception of specific copyrights as noted in the individual source files.
+ 1991-2000 iMatix Corporation <http://www.imatix.com>".
+ 1991-2000 iMatix Corporation."
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/libpng-2.0
+Copyright:
+ 1995-2018 The PNG Reference Library Authors.
+ 2018 Cosmin Truta.
+ 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson.
+ 1996-1997 Andreas Dilger.
+ 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/libtiff
+Copyright:
+ 1988-1997 Sam Leffler
+ 1991-1997 Silicon Graphics, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/libutil-David-Nugent
+Copyright: 1995 David Nugent <davidn@blaze.net.au>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/lsof
+Copyright: 2002 Purdue Research Foundation, West Lafayette,
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/magaz
+Copyright: 1999-2011, Donald Arseneau,   asnd@triumf.ca,  Vancouver, Canada
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/mailprio
+Copyright: 1994, 1996, Tony Sanders <sanders@earth.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/metamail
+Copyright: 1991 Bell Communications Research, Inc. (Bellcore)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/mpi-permissive
+Copyright: 2000-2004 by Etnus, LLC
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/pnmstitch
+Copyright: 2002 Mark Salyzyn
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/psfrag
+Copyright: 1996 Craig Barratt, Michael C. Grant, and David Carlisle.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/psutils
+Copyright: 1991-1995 Angus J. C. Duggan.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/softSurfer
+Copyright: 2001, softSurfer (www.softsurfer.com)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ssh-keyscan
+Copyright: 1995, 1996 by David Mazieres <dm@lcs.mit.edu>.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/ulem
+Copyright: 1989-2019 by Donald Arseneau (Vancouver, Canada, asnd@triumf.ca)
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/w3m
+Copyright:
+ 1994-2002 by Akinori Ito
+ 2002-2011 by Akinori Ito, Hironori Sakamoto, Fumitoshi Ukai
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/xinetd
+Copyright:
+ 1992 by Panagiotis Tsirigotis
+ 1998-2001 by Rob Braun
+ 2001 by Steve Grubb
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/xkeyboard-config-Zinoviev
+Copyright: 1999, 2000 by Anton Zinoviev <anton@lml.bas.bg>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/xlock
+Copyright: 1990 by Sun Microsystems, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/xpp
+Copyright: 2002 The Trustees of Indiana University. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/text/licenses/zlib-acknowledgement
+Copyright:
+ 2002-2007 Charlie Poole
+ 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov
+ 2000-2002 Philip A. Craig
+ 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: debian/*
+Copyright:
+ 2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2025 eevelweezel <eevel.weezel@gmail.com>
+License: MIT or Apache-2.0
+
+License: Apache-2.0
+ Debian systems provide the Apache 2.0 license in
+ /usr/share/common-licenses/Apache-2.0
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
