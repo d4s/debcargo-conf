@@ -2,7 +2,7 @@ diff --git a/Cargo.toml b/Cargo.toml
 index bbaeb09..93517f2 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -305,8 +305,8 @@ default-features = false
+@@ -321,8 +321,8 @@ default-features = false
  
  [features]
  __implicit-crypto-backend-for-tests = []
