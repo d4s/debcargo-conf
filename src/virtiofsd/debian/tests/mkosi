@@ -32,6 +32,17 @@ RELEASE=$(
     fi
 )
 
+# systemd-boot is in universe on Ubuntu
+REPOS=$(
+    # shellcheck disable=SC1091
+    . /etc/os-release;
+    if [ "$ID" = "ubuntu" ]; then
+        echo "--repositories=universe"
+    else
+        echo "--repositories=main"
+    fi
+)
+
 cleanup () {
     rm -rf "$workdir" || true
 }
@@ -68,6 +79,7 @@ mkosi \
     ${RELEASE:+"--release=${RELEASE}"} \
     --tools-tree="" \
     --package-manager-tree=/etc/apt \
+    "${REPOS}" \
     --bootable=yes \
     --bootloader=systemd-boot \
     --package=systemd-boot \
