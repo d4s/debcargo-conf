@@ -100,6 +100,6 @@ if [ "${INTERACTIVE:-}" = "1" ]; then
 fi
 timeout --foreground "${timeout}" \
     script --return --quiet --command \
-    "mkosi ${RELEASE:+"--release=${RELEASE}"} --tools-tree="" --runtime-build-sources=yes --register=no qemu"
+    "mkosi ${RELEASE:+"--release=${RELEASE}"} --tools-tree="" --runtime-build-sources=yes --runtime-scratch=no --register=no qemu"
 
 test -f marker-inner
