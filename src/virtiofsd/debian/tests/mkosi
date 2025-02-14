@@ -49,6 +49,12 @@ cleanup () {
 
 export PATH="/usr/sbin:$PATH"
 
+# apparmor is not compatible with swtpm
+aa-teardown >/dev/null 2>&1 || true
+# we need user namespaces for some tests running in nspawn
+sysctl -we kernel.apparmor_restrict_unprivileged_unconfined=0
+sysctl -we kernel.apparmor_restrict_unprivileged_userns=0
+
 if [ "${INTERACTIVE:-}" = "1" ]; then
     workdir=/var/tmp/virtiofsd-smoke-test
     mkdir -p "$workdir"
