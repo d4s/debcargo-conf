@@ -11,6 +11,12 @@ if dpkg --compare-versions "$(uname -r)" lt 5.12; then
     exit 77
 fi
 
+modprobe kvm || true
+if [ ! -e /dev/kvm ]; then
+    echo "Skipping test, KVM not available, booting would be too slow"
+    exit 77
+fi
+
 RELEASE=$(
     # shellcheck disable=SC1091
     . /etc/os-release;
