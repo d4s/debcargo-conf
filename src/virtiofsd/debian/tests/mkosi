@@ -84,7 +84,7 @@ EOF
 mkosi \
     ${RELEASE:+"--release=${RELEASE}"} \
     --tools-tree="" \
-    --package-manager-tree=/etc/apt \
+    --sandbox-tree=/etc/apt \
     "${REPOS}" \
     --bootable=yes \
     --bootloader=systemd-boot \
