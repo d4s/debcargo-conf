@@ -2,21 +2,22 @@ Index: serial-test/Cargo.toml
 ===================================================================
 --- serial-test.orig/Cargo.toml
 +++ serial-test/Cargo.toml
-@@ -35,10 +35,6 @@ denylist = ["docsrs"]
- [dependencies.dashmap]
- version = "5"
+@@ -52,10 +52,6 @@ path = "src/lib.rs"
+ name = "tests"
+ path = "tests/tests.rs"
  
 -[dependencies.document-features]
 -version = "0.2"
 -optional = true
 -
- [dependencies.fslock]
- version = "0.2"
+ [dependencies.env_logger]
+ version = ">=0.6.1"
  optional = true
-@@ -78,6 +74,5 @@ default = [
+@@ -107,7 +103,6 @@ default = [
      "logging",
      "async",
  ]
--docsrs = ["document-features"]
- file_locks = ["fslock"]
- logging = ["log"]
+-docsrs = ["dep:document-features"]
+ file_locks = ["dep:fslock"]
+ logging = ["dep:log"]
+ test_logging = [
