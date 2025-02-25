@@ -21,9 +21,9 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2024 Alexander Kjäll <alexander.kjall@gmail.com>
- 2024 Loren M. Lang <lorenl@north-winds.org>
+ 2024-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024-2025 Alexander Kjäll <alexander.kjall@gmail.com>
+ 2024-2025 Loren M. Lang <lorenl@north-winds.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0

@@ -4,13 +4,14 @@ Upstream-Contact: Rushmore Mushambi <rushmore@webenchanter.com>
 Source: https://github.com/addr-rs/psl
 
 Files: *
-Copyright: 2016-2024 Rushmore Mushambi <rushmore@webenchanter.com>
+Copyright: 2016-2025 Rushmore Mushambi <rushmore@webenchanter.com>
 License: MIT or Apache-2.0
 
 Files: debian/*
 Copyright:
- 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2024 Alexander Kjäll <alexander.kjall@gmail.com>
+ 2024-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024-2025 Alexander Kjäll <alexander.kjall@gmail.com>
+ 2024-2025 Loren M. Lang <lorenl@north-winds.org>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
