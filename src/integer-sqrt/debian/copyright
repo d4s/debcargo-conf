@@ -8,6 +8,7 @@ Copyright:
  2018-2020 Richard Dodd <richard.o.dodd@gmail.com>
  2020 Joseph Richey <dev@richey.us>
  2020 Xiliang Chen <xlchen1291@gmail.com>
+ 2018 Sergei Shulepov <s.pepyakin@gmail.com>
 License: Apache-2.0 or MIT
 
 Files: debian/*
