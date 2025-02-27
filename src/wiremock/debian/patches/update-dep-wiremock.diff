@@ -1,0 +1,34 @@
+Description: relax deps and fix lifespan traits (w/o async_trait)
+Author: eevelweezel <eevel.weezel@gmail.com>
+Last-Update: 2025-01-26
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -70,7 +70,7 @@
+ version = "0.22"
+ 
+ [dependencies.deadpool]
+-version = "0.10.0"
++version = "0.12"
+ 
+ [dependencies.futures]
+ version = "0.3.5"
+--- a/src/mock_server/pool.rs
++++ b/src/mock_server/pool.rs
+@@ -1,6 +1,5 @@
+ use crate::mock_server::bare_server::BareMockServer;
+ use crate::MockServer;
+-use async_trait::async_trait;
+ use deadpool::managed::{Metrics, Object, Pool};
+ use once_cell::sync::Lazy;
+ use std::convert::Infallible;
+@@ -52,7 +51,7 @@
+ #[derive(Debug)]
+ pub(crate) struct MockServerPoolManager;
+ 
+-#[async_trait]
++#[feature(async_fn_in_trait)]
+ impl deadpool::managed::Manager for MockServerPoolManager {
+     type Error = Infallible;
+     type Type = BareMockServer;
