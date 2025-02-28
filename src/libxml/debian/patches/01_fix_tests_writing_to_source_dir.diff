@@ -1,0 +1,36 @@
+Description: Fix tests that attempt to write to the source directory
+Author: Antonin Delpeuch <antonin@delpeuch.eu>
+Forwarded: https://github.com/KWARC/rust-libxml/pull/140
+Applied-Upstream: https://github.com/KWARC/rust-libxml/commit/4e41905295428e5fe4609e786aea2027b76cc225
+Reviewed-by: Deyan Ginev <deyan.ginev@gmail.com>
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/tests/base_tests.rs
++++ b/tests/base_tests.rs
+@@ -1,5 +1,6 @@
+ //! Base API tests, to be split into distinct sub-suites later on
+ //!
++use std::env;
+ use std::fs::File;
+ use std::io::Read;
+ 
+@@ -44,7 +45,8 @@ fn hello_builder() {
+ 
+   let doc_string = doc.to_string();
+   assert!(doc_string.len() > 1);
+-  assert!(doc.save_file("tests/results/helloworld.xml").is_ok());
++  let output_path = env::temp_dir().join("rust_libxml_tests_helloworld.xml");
++  assert!(doc.save_file(&output_path.display().to_string()).is_ok());
+ }
+ 
+ #[test]
+@@ -69,7 +71,8 @@ fn duplicate_file() {
+     assert!(doc_result.is_ok());
+ 
+     let doc = doc_result.unwrap();
+-    doc.save_file("tests/results/copy.xml").unwrap();
++    let output_path = env::temp_dir().join("rust_libxml_tests_copy.xml");
++    doc.save_file(&output_path.display().to_string()).unwrap();
+   }
+ }
+ 

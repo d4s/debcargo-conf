@@ -1,0 +1,18 @@
+Description: Disable benches as they require downloading an external file
+  The license of the external file (big.xml) is unclear.
+Author: Antonin Delpeuch <antonin@delpeuch>
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -36,10 +36,6 @@ repository = "https://github.com/KWARC/r
+ [lib]
+ name = "libxml"
+ 
+-[[bench]]
+-name = "parsing_benchmarks"
+-harness = false
+-
+ [dependencies.libc]
+ version = "0.2"
+ 
