@@ -1,0 +1,7 @@
+overlay = "."
+uploaders = ["Ian Jackson <ijackson@chiark.greenend.org.uk>"]
+collapse_features = true
+
+# Testing with --all-features will test all the actual dependencies.
+packages."lib"  .test_is_broken = true
+packages."lib+@".test_is_broken = false

@@ -1,0 +1,12 @@
+overlay = "."
+uploaders = ["Ian Jackson <ijackson@chiark.greenend.org.uk>"]
+collapse_features = true
+
+# derive-deftly requires that you enable at leaast `minimal-1`
+# So the other "individual feature" tests are all broken.
+packages."lib"               .test_is_broken = true
+packages."lib+minimal-1"     .test_is_broken = false
+packages."lib+default"       .test_is_broken = false
+packages."lib+full-msrv-1.56".test_is_broken = false
+packages."lib+full"          .test_is_broken = false
+packages."lib+@"             .test_is_broken = false
