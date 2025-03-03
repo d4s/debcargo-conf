@@ -11,6 +11,12 @@ if dpkg --compare-versions "$(uname -r)" lt 5.12; then
     exit 77
 fi
 
+modprobe kvm || true
+if [ ! -e /dev/kvm ]; then
+    echo "Skipping test, KVM not available, booting would be too slow"
+    exit 77
+fi
+
 RELEASE=$(
     # shellcheck disable=SC1091
     . /etc/os-release;
@@ -32,11 +38,28 @@ RELEASE=$(
     fi
 )
 
+# systemd-boot is in universe on Ubuntu
+REPOS=$(
+    # shellcheck disable=SC1091
+    . /etc/os-release;
+    if [ "$ID" = "ubuntu" ]; then
+        echo "--repositories=universe"
+    else
+        echo "--repositories=main"
+    fi
+)
+
 cleanup () {
     rm -rf "$workdir" || true
 }
 
 export PATH="/usr/sbin:$PATH"
+
+# apparmor is not compatible with swtpm
+aa-teardown >/dev/null 2>&1 || true
+# we need user namespaces for some tests running in nspawn
+sysctl -we kernel.apparmor_restrict_unprivileged_unconfined=0
+sysctl -we kernel.apparmor_restrict_unprivileged_userns=0
 
 if [ "${INTERACTIVE:-}" = "1" ]; then
     workdir=/var/tmp/virtiofsd-smoke-test
@@ -67,7 +90,8 @@ EOF
 mkosi \
     ${RELEASE:+"--release=${RELEASE}"} \
     --tools-tree="" \
-    --package-manager-tree=/etc/apt \
+    --sandbox-tree=/etc/apt \
+    "${REPOS}" \
     --bootable=yes \
     --bootloader=systemd-boot \
     --package=systemd-boot \
@@ -88,6 +112,6 @@ if [ "${INTERACTIVE:-}" = "1" ]; then
 fi
 timeout --foreground "${timeout}" \
     script --return --quiet --command \
-    "mkosi ${RELEASE:+"--release=${RELEASE}"} --tools-tree="" --runtime-build-sources=yes --register=no qemu"
+    "mkosi ${RELEASE:+"--release=${RELEASE}"} --tools-tree="" --runtime-build-sources=yes --runtime-scratch=no --register=no qemu"
 
 test -f marker-inner
