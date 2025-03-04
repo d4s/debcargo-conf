@@ -21,9 +21,9 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2018-2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018-2023 kpcyrd <git@rxv.cc>
- 2018-2023 Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+ 2018-2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2024 kpcyrd <git@rxv.cc>
+ 2018-2024 Daniel Kahn Gillmor <dkg@fifthhorseman.net>
 License: MIT
 
 License: MIT
