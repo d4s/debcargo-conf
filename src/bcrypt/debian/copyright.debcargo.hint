@@ -21,8 +21,8 @@ Comment:
 
 Files: debian/*
 Copyright:
- 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2024 Bastian Germann <bage@debian.org>
+ 2024-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024-2025 Bastian Germann <bage@debian.org>
 License: MIT
 
 License: MIT
