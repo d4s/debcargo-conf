@@ -1,0 +1,10 @@
+overlay = "."
+uploaders = ["Julian Andres Klode <jak@debian.org>"]
+bin_name = "cargo-vendor-filterer"
+description = """
+cargo vendor-filterer allows vendoring dependencies, with
+unused crates being filtered.
+"""
+
+[packages.bin]
+section = "devel"
