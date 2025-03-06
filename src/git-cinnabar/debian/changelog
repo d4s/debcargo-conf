@@ -1,3 +1,10 @@
+rust-git-cinnabar (0.7.0-1) unstable; urgency=medium
+
+  * Package git-cinnabar 0.7.0 from crates.io using debcargo 2.7.7
+  * Downgrade bzip2 and itertools dependencies.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 02 Mar 2025 05:07:26 +0000
+
 rust-git-cinnabar (0.7.0~beta.2-3) unstable; urgency=medium
 
   * Team upload.

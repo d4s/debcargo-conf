@@ -6,8 +6,8 @@ Index: git-cinnabar/Cargo.toml
 ===================================================================
 --- git-cinnabar.orig/Cargo.toml
 +++ git-cinnabar/Cargo.toml
-@@ -215,8 +215,6 @@ self-update = [
-     "shared_child",
+@@ -59,8 +59,6 @@ self-update = [
+     "dep:concat_const",
      "dep:tar",
      "dep:xz2",
 -    "dep:zip",
@@ -15,11 +15,10 @@ Index: git-cinnabar/Cargo.toml
  ]
  version-check = ["shared_child"]
  
-@@ -234,25 +232,3 @@ optional = true
- [target."cfg(not(windows))".dependencies.xz2]
+@@ -241,28 +239,6 @@ optional = true
  version = "0.1"
  optional = true
--
+ 
 -[target."cfg(windows)".dependencies.curl-sys]
 -version = "0.4"
 -features = [
@@ -33,7 +32,7 @@ Index: git-cinnabar/Cargo.toml
 -features = ["static"]
 -
 -[target."cfg(windows)".dependencies.windows-sys]
--version = "0.52"
+-version = "0.59"
 -features = ["Win32_Foundation"]
 -
 -[target."cfg(windows)".dependencies.zip]
@@ -41,3 +40,7 @@ Index: git-cinnabar/Cargo.toml
 -features = ["deflate-zlib"]
 -optional = true
 -default-features = false
+-
+ [profile.dev]
+ panic = "abort"
+ 

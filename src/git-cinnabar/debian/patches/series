@@ -1,7 +1,6 @@
 remove-windows-target.diff
-switch-to-sha1.diff
 remove-make-cmd.diff
 remove-tee.diff
-full-version.diff
 no-default-features.diff
 built-using.diff
+downgrades.diff

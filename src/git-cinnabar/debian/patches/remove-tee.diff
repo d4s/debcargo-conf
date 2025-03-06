@@ -6,7 +6,7 @@ Index: git-cinnabar/Cargo.toml
 ===================================================================
 --- git-cinnabar.orig/Cargo.toml
 +++ git-cinnabar/Cargo.toml
-@@ -167,9 +167,6 @@ version = "0.10"
+@@ -189,9 +189,6 @@ version = "0.10"
  version = "1.0"
  optional = true
  
@@ -33,7 +33,7 @@ Index: git-cinnabar/src/main.rs
 ===================================================================
 --- git-cinnabar.orig/src/main.rs
 +++ git-cinnabar/src/main.rs
-@@ -73,7 +73,7 @@ use std::collections::{BTreeMap, BTreeSe
+@@ -71,7 +71,7 @@ use std::collections::{BTreeMap, BTreeSe
  use std::ffi::{CStr, CString, OsStr, OsString};
  use std::fs::File;
  use std::hash::Hash;
@@ -42,7 +42,7 @@ Index: git-cinnabar/src/main.rs
  use std::iter::repeat;
  use std::os::raw::{c_char, c_int};
  #[cfg(windows)]
-@@ -129,7 +129,6 @@ use store::{
+@@ -127,7 +127,6 @@ use store::{
      RawHgChangeset, RawHgFile, RawHgManifest, SetWhat, Store, BROKEN_REF, CHECKED_REF,
      METADATA_REF, NOTES_REF, REFS_PREFIX, REPLACE_REFS_PREFIX,
  };
@@ -50,7 +50,7 @@ Index: git-cinnabar/src/main.rs
  use tree_util::{diff_by_path, merge_join_by_path, NoRecurse, RecurseTree};
  use url::Url;
  use util::{CStrExt, IteratorExt, OsStrExt, SliceExt, Transpose};
-@@ -168,6 +167,28 @@ use version_check::{find_version, Versio
+@@ -166,6 +165,28 @@ use version_check::{find_version, Versio
  
  pub const CARGO_PKG_REPOSITORY: &str = env!("CARGO_PKG_REPOSITORY");
  

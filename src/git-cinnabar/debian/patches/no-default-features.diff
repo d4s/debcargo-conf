@@ -6,12 +6,12 @@ Index: git-cinnabar/Cargo.toml
 ===================================================================
 --- git-cinnabar.orig/Cargo.toml
 +++ git-cinnabar/Cargo.toml
-@@ -205,7 +205,7 @@ version = "2.0"
+@@ -46,8 +46,6 @@ repository = "https://github.com/glandiu
  [features]
  compile_commands = []
- curl-compat = ["rustflags"]
--default = ["full-version", "version-check"]
-+default = []
- full-version = ["dep:concat_const", "dep:git-version"]
- gitdev = []
- self-update = [
+ default = [
+-    "full-version",
+-    "version-check",
+ ]
+ full-version = [
+     "dep:concat_const",

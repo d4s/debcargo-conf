@@ -6,16 +6,16 @@ Index: git-cinnabar/Cargo.toml
 ===================================================================
 --- git-cinnabar.orig/Cargo.toml
 +++ git-cinnabar/Cargo.toml
-@@ -192,9 +192,6 @@ version = "1.0.46"
+@@ -214,9 +214,6 @@ version = "1.0.46"
  [build-dependencies.itertools]
- version = "0.13"
+ version = "0.14"
  
 -[build-dependencies.make-cmd]
 -version = "0.1"
 -
- [build-dependencies.rustflags]
- version = "0.1"
- optional = true
+ [build-dependencies.syn]
+ version = "2"
+ features = ["full"]
 Index: git-cinnabar/build.rs
 ===================================================================
 --- git-cinnabar.orig/build.rs

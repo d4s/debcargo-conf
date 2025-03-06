@@ -1,0 +1,35 @@
+Description: Downgrade bzip2 and itertools dependencies
+Author: Mike Hommey <glandium@debian.org>
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: git-cinnabar/Cargo.toml
+===================================================================
+--- git-cinnabar.orig/Cargo.toml
++++ git-cinnabar/Cargo.toml
+@@ -85,7 +85,7 @@ default-features = false
+ version = "1"
+ 
+ [dependencies.bzip2]
+-version = "0.5"
++version = "0.4"
+ 
+ [dependencies.cfg-if]
+ version = "1"
+@@ -143,7 +143,7 @@ version = "0.4"
+ version = "2"
+ 
+ [dependencies.itertools]
+-version = "0.14"
++version = "0.13"
+ 
+ [dependencies.libc]
+ version = "0.2"
+@@ -207,7 +207,7 @@ version = "3"
+ version = "1.0.46"
+ 
+ [build-dependencies.itertools]
+-version = "0.14"
++version = "0.13"
+ 
+ [build-dependencies.syn]
+ version = "2"

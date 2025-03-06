@@ -839,13 +839,6 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/block_test.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/blocksource.c
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
@@ -867,28 +860,7 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/dump.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/error.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/generic.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/generic.h
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -923,13 +895,6 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/merged_test.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/pq.c
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
@@ -938,20 +903,6 @@ Comment:
  before uploading to the archive.
 
 Files: git-core/reftable/pq.h
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/pq_test.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/publicbasics.c
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -972,13 +923,6 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/readwrite_test.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/record.c
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
@@ -987,6 +931,13 @@ Comment:
  before uploading to the archive.
 
 Files: git-core/reftable/record.h
+Copyright: 2020 Google LLC
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: git-core/reftable/reftable-basics.h
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -1007,21 +958,7 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/reftable-generic.h
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/reftable-iterator.h
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/reftable-malloc.h
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -1056,13 +993,6 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/reftable-tests.h
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/reftable-writer.h
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
@@ -1084,28 +1014,7 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: git-core/reftable/stack_test.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: git-core/reftable/system.h
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/test_framework.c
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/test_framework.h
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
@@ -1120,13 +1029,6 @@ Comment:
  before uploading to the archive.
 
 Files: git-core/reftable/tree.h
-Copyright: 2020 Google LLC
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: git-core/reftable/tree_test.c
 Copyright: 2020 Google LLC
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
