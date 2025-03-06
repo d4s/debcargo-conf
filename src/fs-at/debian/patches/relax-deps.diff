@@ -1,11 +1,13 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -35,7 +35,7 @@
+Index: fs-at/Cargo.toml
+===================================================================
+--- fs-at.orig/Cargo.toml
++++ fs-at/Cargo.toml
+@@ -35,7 +35,7 @@ version = "0.4.21"
  optional = true
  
  [dev-dependencies.env_logger]
--version = "0.10.0"
+-version = "0.11.3"
 +version = "0.11"
  
  [dev-dependencies.rayon]
- version = "1.6.1"
+ version = "1.10.0"
