@@ -11,7 +11,7 @@ Files: debian/*
 Copyright:
  2018 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
  2018 Sylvestre Ledru <sylvestre@debian.org>
- 2023 Zixing Liu <zixing.liu@canonical.com>
+ 2023-2025 Zixing Liu <zixing.liu@canonical.com>
 License: MIT or Apache-2.0
 
 License: Apache-2.0

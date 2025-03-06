@@ -4,20 +4,23 @@ Author: Zixing Liu <zixing.liu@canonical.com>
 Forwarded: not-needed
 Last-Update: 2023-09-19
 
---- rust-remove-dir-all-0.8.2.orig/Cargo.toml
-+++ rust-remove-dir-all-0.8.2/Cargo.toml
-@@ -37,10 +37,6 @@ categories = ["filesystem"]
- license = "MIT OR Apache-2.0"
- repository = "https://github.com/XAMPPRocky/remove_dir_all.git"
+Index: remove-dir-all/Cargo.toml
+===================================================================
+--- remove-dir-all.orig/Cargo.toml
++++ remove-dir-all/Cargo.toml
+@@ -45,11 +45,6 @@ repository = "https://github.com/XAMPPRo
+ name = "remove_dir_all"
+ path = "src/lib.rs"
  
 -[[bin]]
 -name = "remove-dir-all"
+-path = "src/bin/remove-dir-all.rs"
 -required-features = ["cli"]
 -
  [dependencies.cfg-if]
  version = "1.0.0"
  
-@@ -82,12 +82,6 @@ version = "3.1"
+@@ -92,12 +87,6 @@ version = "3.1"
  version = "0.2"
  
  [features]

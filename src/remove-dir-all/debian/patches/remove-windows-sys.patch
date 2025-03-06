@@ -5,31 +5,19 @@ Forwarded: not-needed
 Last-Update: 2023-09-12
 ---
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
---- rust-remove-dir-all-0.8.2.orig/Cargo.toml
-+++ rust-remove-dir-all-0.8.2/Cargo.toml
-@@ -12,6 +12,7 @@
- [package]
- edition = "2018"
- name = "remove_dir_all"
-+resolver = "2"
- version = "0.8.2"
- authors = [
-     "Erin P. <xampprocky@gmail.com>",
-@@ -100,17 +101,3 @@ version = "0.1.1"
+Index: remove-dir-all/Cargo.toml
+===================================================================
+--- remove-dir-all.orig/Cargo.toml
++++ remove-dir-all/Cargo.toml
+@@ -107,11 +107,3 @@ version = "0.1.1"
  
  [target."cfg(not(windows))".dependencies.libc]
  version = "0.2"
 -
--[target."cfg(windows)".dependencies.aligned]
--version = "0.4.1"
--
 -[target."cfg(windows)".dependencies.windows-sys]
--version = "0.45.0"
+-version = "0.59.0"
 -features = [
 -    "Win32_Foundation",
 -    "Win32_Storage_FileSystem",
--    "Win32_System_IO",
--    "Win32_System_Ioctl",
--    "Win32_System_SystemServices",
 -    "Win32_System_Threading",
 -]
