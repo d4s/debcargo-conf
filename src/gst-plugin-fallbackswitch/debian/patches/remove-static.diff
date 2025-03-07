@@ -1,0 +1,8 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -103,5 +103,4 @@
+ capi = []
+ default = ["v1_20"]
+ doc = ["gst/v1_18"]
+-static = []
+ v1_20 = ["gst/v1_20"]

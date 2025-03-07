@@ -1,0 +1,53 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gst-plugin-fallbackswitch
+Upstream-Contact:
+ Sebastian Dröge <sebastian@centricular.com>
+ Jan Schmidt <jan@centricular.com>
+Source: https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs
+
+Files: *
+Copyright:
+ Sebastian Dröge <sebastian@centricular.com>
+ Jan Schmidt <jan@centricular.com>
+License: MPL-2.0
+
+Files: examples/gtk_fallbackswitch.rs
+Copyright: 2019 Sebastian Dröge <sebastian@centricular.com>
+License: MPL-2.0 
+
+Files: src/fallbacksrc/*
+Copyright: 2020 Sebastian Dröge <sebastian@centricular.com>
+License: MPL-2.0
+
+Files: src/fallbackswitch/imp.rs
+Copyright:
+ 2020 Mathieu Duponchelle <mathieu@centricular.com>
+ 2021 Jan Schmidt <jan@centricular.com>
+License: MPL-2.0
+
+Files: src/fallbackswitch/mod.rs
+Copyright:
+ 2020 Sebastian Dröge <sebastian@centricular.com>
+ 2021 Jan Schmidt <jan@centricular.com>
+ 2020 Mathieu Duponchelle <mathieu@centricular.com>
+ 2022 Vivia Nikolaidou <vivia.nikolaidou@ltnglobal.com>
+License: MPL-2.0
+
+Files: src/lib.rs
+Copyright: 2019 Sebastian Dröge <sebastian@centricular.com>
+License: MPL-2.0
+
+Files: tests/fallbackswitch.rs
+Copyright:
+ 2019 Sebastian Dröge <sebastian@centricular.com>
+ 2021 Jan Schmidt <jan@centricular.com>
+License: MPL-2.0
+
+Files: debian/*
+Copyright:
+ 2024 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2024 Matthias Geiger <werdahias@riseup.net>
+License: MPL-2.0
+
+License: MPL-2.0
+ Debian systems provide the MPL 2.0 in /usr/share/common-licenses/MPL-2.0
