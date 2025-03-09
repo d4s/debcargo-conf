@@ -1,0 +1,16 @@
+overlay = "."
+uploaders = ["Denis Pynkin <denis.pynkin@collabora.com>"]
+
+collapse_features = true
+
+[source]
+section = "rust"
+
+[packages.bin]
+summary = "resctl-bench is a collection of whole-system benchmarks"
+description = """
+resctl-bench is a collection of whole-system benchmarks to evaluate
+resource control and hardware behaviors using realistic simulated workloads.
+"""
+section = "utils"
+depends = ["rd-agent", "rd-hashd"]

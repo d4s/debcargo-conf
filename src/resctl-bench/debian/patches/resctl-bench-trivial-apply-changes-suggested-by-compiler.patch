@@ -1,0 +1,20 @@
+From f7aa3d6aa6a3ff6c4eff2e16aa725630ed962979 Mon Sep 17 00:00:00 2001
+From: Denis Pynkin <denis.pynkin@collabora.com>
+Date: Mon, 16 Jun 2025 14:23:13 +0200
+Subject: [PATCH] trivial: apply changes suggested by compiler
+
+---
+ resctl-bench/src/base.rs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/src/base.rs
++++ b/src/base.rs
+@@ -506,7 +506,7 @@
+             })?;
+ 
+         let protected = rctx.access_agent_files(|af| {
+-            match af.report.data.sysloads.get(INODESTEAL_TEST.into()) {
++            match af.report.data.sysloads.get(INODESTEAL_TEST) {
+                 Some(rep) => Ok(rep.svc.state == SvcStateReport::Exited),
+                 None => Err(anyhow!(
+                     "base: Can't find {} service after testing",

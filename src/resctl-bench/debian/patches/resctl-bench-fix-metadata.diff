@@ -1,0 +1,97 @@
+--- resctl-bench-2.2.5/Cargo.toml	1970-01-01T00:00:01+00:00
++++ resctl-bench-2.2.5/Cargo.toml	2024-05-01T21:46:59.312678+00:00
+@@ -22,36 +22,6 @@
+ [dependencies.anyhow]
+ version = "1.0"
+ 
+-[dependencies.aws-config]
+-version = "0.55.3"
+-features = [
+-    "rustls",
+-    "rt-tokio",
+-]
+-optional = true
+-default-features = false
+-
+-[dependencies.aws-sdk-s3]
+-version = "0.28.0"
+-features = [
+-    "rustls",
+-    "rt-tokio",
+-]
+-optional = true
+-default-features = false
+-
+-[dependencies.aws-sdk-ssm]
+-version = "0.28.0"
+-features = [
+-    "rustls",
+-    "rt-tokio",
+-]
+-optional = true
+-default-features = false
+-
+-[dependencies.aws_lambda_events]
+-version = "0.10.0"
+-
+ [dependencies.base64]
+ version = "0.22"
+ 
+@@ -66,13 +36,6 @@
+ 
+ [dependencies.indicatif]
+ version = "0.17"
+-
+-[dependencies.jsonwebtoken]
+-version = "8.3.0"
+-
+-[dependencies.lambda_runtime]
+-version = "0.8.1"
+-optional = true
+ 
+ [dependencies.lazy_static]
+ version = "1.4"
+@@ -89,10 +52,6 @@
+ [dependencies.log]
+ version = "0.4"
+ 
+-[dependencies.md5]
+-version = "0.7"
+-optional = true
+-
+ [dependencies.minreq]
+ version = "2.11"
+ features = [
+@@ -102,12 +61,6 @@
+ 
+ [dependencies.num-traits]
+ version = "0.2"
+-
+-[dependencies.octocrab]
+-version = "0.28.0"
+-features = ["rustls"]
+-optional = true
+-default-features = false
+ 
+ [dependencies.plotlib]
+ version = "0.5"
+@@ -160,19 +113,3 @@
+ 
+ [dependencies.thiserror]
+ version = "1.0"
+-
+-[dependencies.tokio]
+-version = "1.29.1"
+-optional = true
+-
+-[features]
+-lambda = [
+-    "resctl-bench-intf/lambda",
+-    "aws-config",
+-    "aws-sdk-s3",
+-    "aws-sdk-ssm",
+-    "octocrab",
+-    "lambda_runtime",
+-    "md5",
+-    "tokio",
+-]

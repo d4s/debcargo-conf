@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -55,7 +55,7 @@
+ [dependencies.minreq]
+ version = "2.11"
+ features = [
+-    "https-rustls",
++    "https",
+     "json-using-serde",
+ ]
+ 

@@ -1,0 +1,65 @@
+From 0a1478bd4eceb4fb1ee2b1d56a47d92f349b5a4d Mon Sep 17 00:00:00 2001
+From: Denis Pynkin <denis.pynkin@collabora.com>
+Date: Wed, 7 May 2025 14:26:25 +0200
+Subject: [PATCH] bench: improve shadow inode protection detection
+
+Some Linux distributions (e.g., Debian) use a kernel release string
+without minor or patch numbers (e.g., "6.14-amd64"), causing incorrect
+detection of shadow inode protection support:
+  [WARN] base: Failed to parse kernel version string 6.14-amd64
+
+Improve version parsing to handle such cases correctly.
+---
+ resctl-bench/src/base.rs | 24 +++++++++++++++---------
+ 1 file changed, 15 insertions(+), 9 deletions(-)
+
+--- a/src/base.rs
++++ b/src/base.rs
+@@ -5,7 +5,6 @@
+     HASHD_BENCH_SVC_NAME,
+ };
+ use resctl_bench_intf::Args;
+-use scan_fmt::scan_fmt;
+ use serde::{Deserialize, Serialize};
+ use std::collections::BTreeSet;
+ use std::path::{Path, PathBuf};
+@@ -446,24 +445,31 @@
+             return true;
+         }
+ 
+-        if let Ok((ver, patch, _)) = scan_fmt!(&ver, "{}.{}.{}", u32, u32, u32) {
+-            if ver > 5 || (ver == 5 && patch >= 15) {
++        let mut ver_parts = ver.split('.');
++        let ver_major = ver_parts.next().and_then(|s| s.parse::<u32>().ok());
++        let ver_minor = ver_parts.next().and_then(|s| s.parse::<u32>().ok());
++
++        match (ver_major, ver_minor) {
++            (Some(major), Some(minor)) if major > 5 || (major == 5 && minor >= 15) => {
+                 debug!(
+                     "base: kernel {}.{} >= 5.15, assuming shadow inode prot",
+-                    ver, patch
++                    major, minor
+                 );
+                 true
+-            } else {
++            },
++            (Some(major), Some(minor)) => {
+                 info!(
+                     "base: Kernel {}.{} (< 5.15) might not have shadow inode protection",
+-                    ver, patch
++                    major, minor
+                 );
+                 false
++            },
++            _ =>  {
++                warn!("base: Failed to parse kernel version string {}", &kver);
++                return false
+             }
+-        } else {
+-            warn!("base: Failed to parse kernel version string {}", &kver);
+-            false
+         }
++
+     }
+ 
+     pub fn test_inodesteal(&mut self) -> Result<()> {

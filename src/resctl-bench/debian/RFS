@@ -1,0 +1,12 @@
+Depend:
+ - rd-agent
+ - rd-hashd
+ - libflate
+ - libflate-lz77
+ - linreg
+ - minreq
+ - plotlib
+ - rd-agent-intf
+ - rd-hashd-intf
+ - rd-util
+ - resctl-bench-intf

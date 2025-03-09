@@ -1,0 +1,6 @@
+# see SRPM from Fedora: rust-resctl-bench-2.2.5
+resctl-bench-fix-metadata.diff
+relax-dep.diff
+resctl-bench-fix-minreq-feature.diff
+resctl-bench-improve-shadow-inode-protection-detection.patch
+resctl-bench-trivial-apply-changes-suggested-by-compiler.patch

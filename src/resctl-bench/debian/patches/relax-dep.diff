@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -97,7 +97,7 @@
+ version = "1.0"
+ 
+ [dependencies.statrs]
+-version = "0.16"
++version = ">= 0.16"
+ 
+ [dependencies.sysinfo]
+ version = "0.30"
