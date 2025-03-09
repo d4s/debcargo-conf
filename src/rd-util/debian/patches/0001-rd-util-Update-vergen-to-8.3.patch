@@ -1,0 +1,73 @@
+From 460219e8ac6020e2d87db8596113642e6b1100be Mon Sep 17 00:00:00 2001
+From: Tejun Heo <tj@kernel.org>
+Date: Sat, 27 Apr 2024 00:33:28 -1000
+Subject: [PATCH] rd-util: Update vergen to 8.3
+
+While at it, use cargo target triple instead of rustc's host target triple.
+---
+ Cargo.lock         | 181 +++++++++++----------------------------------
+ Cargo.toml |   2 +-
+ build.rs   |  18 ++---
+ src/lib.rs |  15 ++--
+ 4 files changed, 61 insertions(+), 155 deletions(-)
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -96,4 +96,5 @@
+ version = "1.0"
+ 
+ [build-dependencies.vergen]
+-version = "7.0"
++version = ">=8.3"
++features = ["git", "gitcl", "cargo"]
+--- a/build.rs
++++ b/build.rs
+@@ -1,16 +1,8 @@
+ // Copyright (c) Facebook, Inc. and its affiliates.
+-use vergen::{vergen, Config, SemverKind};
+-
+ fn main() -> anyhow::Result<()> {
+-    let mut config = Config::default();
+-    *config.git_mut().semver_kind_mut() = SemverKind::Lightweight;
+-    *config.git_mut().semver_dirty_mut() = Some("-dirty");
+-    match vergen(config) {
+-        Ok(()) => Ok(()),
+-        Err(_) => {
+-            let mut config = Config::default();
+-            *config.git_mut().enabled_mut() = false;
+-            vergen(config)
+-        }
+-    }
++    vergen::EmitBuilder::builder()
++        .git_sha(true)
++        .git_dirty(true)
++        .cargo_target_triple()
++        .emit()
+ }
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -49,14 +49,19 @@
+ pub const WRITE: usize = 1;
+ 
+ lazy_static::lazy_static! {
+-    static ref GIT_VERSION: &'static str = {
+-        match option_env!("VERGEN_GIT_SEMVER_LIGHTWEIGHT") {
+-            Some(v) => split_git_version(v).1,
+-            None => ""
++    static ref GIT_VERSION: String = {
++	let mut ver = String::new();
++        if let Some(v) = option_env!("VERGEN_GIT_SHA") {
++            ver += "g";
++	    ver += v;
++	    if let Some("true") = option_env!("VERGEN_GIT_DIRTY") {
++		ver += "-dirty";
++	    }
+         }
++	ver
+     };
+     static ref BUILD_TAG: String = {
+-        let mut tag = env!("VERGEN_RUSTC_HOST_TRIPLE").to_string();
++        let mut tag = env!("VERGEN_CARGO_TARGET_TRIPLE").to_string();
+         if cfg!(debug_assertions) {
+             write!(tag, "/debug").unwrap();
+         }

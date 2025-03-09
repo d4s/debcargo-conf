@@ -1,0 +1,38 @@
+From e0fc927e34b96b09bf69e72b9f3d3512b4bb686b Mon Sep 17 00:00:00 2001
+From: Tejun Heo <tj@kernel.org>
+Date: Mon, 29 Apr 2024 11:52:45 -1000
+Subject: [PATCH] cargo fmt
+
+---
+ src/lib.rs | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/src/lib.rs b/src/lib.rs
+index 861e6d8..f6841e3 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -50,15 +50,15 @@ pub const WRITE: usize = 1;
+ 
+ lazy_static::lazy_static! {
+     static ref GIT_VERSION: String = {
+-	let mut ver = String::new();
++        let mut ver = String::new();
+         if let Some(v) = option_env!("VERGEN_GIT_SHA") {
+             ver += "g";
+-	    ver += v;
+-	    if let Some("true") = option_env!("VERGEN_GIT_DIRTY") {
+-		ver += "-dirty";
+-	    }
++            ver += v;
++            if let Some("true") = option_env!("VERGEN_GIT_DIRTY") {
++                ver += "-dirty";
++            }
+         }
+-	ver
++        ver
+     };
+     static ref BUILD_TAG: String = {
+         let mut tag = env!("VERGEN_CARGO_TARGET_TRIPLE").to_string();
+-- 
+2.42.4
+

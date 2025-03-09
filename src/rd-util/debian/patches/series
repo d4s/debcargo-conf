@@ -1,0 +1,4 @@
+0001-rd-util-Update-vergen-to-8.3.patch
+0002-cargo-fmt.patch
+0003-rd-utils-Improve-VERGEN_GIT_SHA-handling.patch
+0004-rd-utils-use-zbus-instead-of-rustbus.patch
