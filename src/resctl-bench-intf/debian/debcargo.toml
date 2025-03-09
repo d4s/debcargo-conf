@@ -1,0 +1,6 @@
+overlay = "."
+uploaders = ["Denis Pynkin <denis.pynkin@collabora.com>"]
+summary = "The interface library for resctl-bench"
+
+collapse_features = true
+
