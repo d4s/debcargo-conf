@@ -1,0 +1,11 @@
+overlay = "."
+uploaders = ["Denis Pynkin <denis.pynkin@collabora.com>"]
+collapse_features = true
+
+[source]
+section = "rust"
+
+[packages.bin]
+summary = "Management agent for resctl-demo and resctl-bench"
+section = "utils"
+depends = ["python3-bpfcc", "oomd", "gnuplot-nox"]

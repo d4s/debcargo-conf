@@ -1,0 +1,42 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: rd-agent
+Upstream-Contact: Tejun Heo <tj@kernel.org>
+Source: https://github.com/facebookexperimental/resctl-demo
+
+Files: *
+Copyright: FIXME (overlay) UNKNOWN-YEARS Tejun Heo <tj@kernel.org>
+License: Apache-2.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: src/misc/biolatpcts.py
+Copyright:
+ 2020 Tejun Heo <tj@kernel.org>
+ 2020 Facebook
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/misc/iocost_coef_gen.py
+Copyright:
+ 2019 Tejun Heo <tj@kernel.org>
+ 2019 Andy Newell <newella@fb.com>
+ 2019 Facebook
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: debian/*
+Copyright:
+ 2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2025 Denis Pynkin <denis.pynkin@collabora.com>
+License: Apache-2.0
+
+License: Apache-2.0
+ Debian systems provide the Apache 2.0 license in
+ /usr/share/common-licenses/Apache-2.0

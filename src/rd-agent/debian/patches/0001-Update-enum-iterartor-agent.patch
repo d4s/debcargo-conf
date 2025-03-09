@@ -1,0 +1,70 @@
+From f65eedf9017332255ef0a48649664c26b45b9c07 Mon Sep 17 00:00:00 2001
+From: Tejun Heo <tj@kernel.org>
+Date: Thu, 25 Apr 2024 06:43:11 -1000
+Subject: Update enum-iterartor dependency to the latest
+
+
+--- a/src/report.rs
++++ b/src/report.rs
+@@ -2,7 +2,6 @@
+ use anyhow::{anyhow, bail, Result};
+ use chrono::prelude::*;
+ use crossbeam::channel::{self, select, Receiver, Sender};
+-use enum_iterator::IntoEnumIterator;
+ use log::{debug, error, info, trace, warn};
+ use nix::sys::signal::{kill, Signal};
+ use nix::unistd::Pid;
+@@ -266,7 +265,7 @@
+         };
+ 
+         us.usages.insert(ROOT_SLICE.into(), Default::default());
+-        for slice in Slice::into_enum_iter() {
++        for slice in enum_iterator::all::<Slice>() {
+             us.usages.insert(slice.name().into(), Default::default());
+         }
+ 
+@@ -281,7 +280,7 @@
+ 
+         let (us, cpu_total) = read_system_usage(self.devnr)?;
+         usages.insert(ROOT_SLICE.into(), us);
+-        for slice in Slice::into_enum_iter() {
++        for slice in enum_iterator::all::<Slice>() {
+             usages.insert(
+                 slice.name().to_string(),
+                 read_cgroup_usage(slice.cgrp(), self.devnr),
+--- a/src/slices.rs
++++ b/src/slices.rs
+@@ -1,6 +1,5 @@
+ // Copyright (c) Facebook, Inc. and its affiliates.
+ use anyhow::{Context, Result};
+-use enum_iterator::IntoEnumIterator;
+ use glob::glob;
+ use log::{debug, error, info, trace, warn};
+ use scan_fmt::scan_fmt;
+@@ -246,7 +245,7 @@
+     }
+ 
+     let mut updated = false;
+-    for slice in Slice::into_enum_iter() {
++    for slice in enum_iterator::all::<Slice>() {
+         let enforce_mem = slice_enforce_mem(&cfg.enforce, slice);
+ 
+         if !cfg.enforce.cpu && !enforce_mem && !cfg.enforce.io {
+@@ -353,7 +352,7 @@
+ 
+ pub fn clear_slices(ecfg: &EnforceConfig) -> Result<()> {
+     let mut updated = false;
+-    for slice in Slice::into_enum_iter() {
++    for slice in enum_iterator::all::<Slice>() {
+         let enforce_mem = slice_enforce_mem(ecfg, slice);
+ 
+         if !ecfg.cpu && !enforce_mem && !ecfg.io {
+@@ -597,7 +596,7 @@
+ 
+     let recursive_mem_prot = cfg.memcg_recursive_prot();
+ 
+-    for slice in Slice::into_enum_iter() {
++    for slice in enum_iterator::all::<Slice>() {
+         let sk = knobs.slices.get(slice.name()).unwrap();
+ 
+         let path = slice.cgrp();
