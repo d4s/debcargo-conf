@@ -1,22 +1,29 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: remove_dir_all
-Upstream-Contact: Aaronepower <theaaronepower@gmail.com>
-Source: https://github.com/Aaronepower/remove_dir_all.git
+Upstream-Name: tokio-retry
+Upstream-Contact: Sam Rijs <srijs@airpost.net>
+Source: https://github.com/srijs/rust-tokio-retry
 
 Files: *
-Copyright: 2017-2023 Aaron Power <theaaronepower@gmail.com>
-License: MIT or Apache-2.0
+Copyright: FIXME (overlay) UNKNOWN-YEARS Sam Rijs <srijs@airpost.net>
+License: MIT
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: LICENSE
+Copyright: 2017 Sam Rijs
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
 
 Files: debian/*
 Copyright:
- 2018 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018 Sylvestre Ledru <sylvestre@debian.org>
- 2023-2025 Zixing Liu <zixing.liu@canonical.com>
-License: MIT or Apache-2.0
-
-License: Apache-2.0
- Debian systems provide the Apache 2.0 license in
- /usr/share/common-licenses/Apache-2.0
+ 2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2025 Zixing Liu <zixing.liu@canonical.com>
+License: MIT
 
 License: MIT
  Permission is hereby granted, free of charge, to any person obtaining a copy

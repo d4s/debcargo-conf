@@ -2,12 +2,12 @@ Index: fs-at/Cargo.toml
 ===================================================================
 --- fs-at.orig/Cargo.toml
 +++ fs-at/Cargo.toml
-@@ -46,9 +46,6 @@ version = "1.6.1"
+@@ -46,9 +46,6 @@ version = "1.10.0"
  [dev-dependencies.tempfile]
- version = "3.8.0"
+ version = "3.10.1"
  
 -[dev-dependencies.test-log]
--version = "0.2.11"
+-version = "0.2.16"
 -
  [features]
  default = []
@@ -16,7 +16,7 @@ Index: fs-at/src/lib.rs
 ===================================================================
 --- fs-at.orig/src/lib.rs
 +++ fs-at/src/lib.rs
-@@ -547,7 +547,7 @@ mod tests {
+@@ -549,7 +549,7 @@ mod tests {
  
      use rayon::prelude::*;
      use tempfile::TempDir;
@@ -29,7 +29,7 @@ Index: fs-at/src/unix.rs
 ===================================================================
 --- fs-at.orig/src/unix.rs
 +++ fs-at/src/unix.rs
-@@ -419,7 +419,7 @@ mod tests {
+@@ -421,7 +421,7 @@ mod tests {
      };
  
      use tempfile::TempDir;

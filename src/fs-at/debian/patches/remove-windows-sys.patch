@@ -5,18 +5,20 @@ Forwarded: not-needed
 Last-Update: 2023-09-12
 ---
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
---- rust-fs-at-0.1.10.orig/Cargo.toml
-+++ rust-fs-at-0.1.10/Cargo.toml
-@@ -52,7 +52,6 @@ version = "0.2.11"
+Index: fs-at/Cargo.toml
+===================================================================
+--- fs-at.orig/Cargo.toml
++++ fs-at/Cargo.toml
+@@ -52,7 +52,6 @@ version = "0.2.16"
  [features]
  default = []
  log = ["dep:log"]
 -workaround-procmon = ["dep:once_cell"]
  
  [target."cfg(not(windows))".dependencies.libc]
- version = "0.2.147"
-@@ -61,23 +60,3 @@ version = "0.2.147"
- version = "0.26.2"
+ version = "0.2.153"
+@@ -61,26 +60,3 @@ version = "0.2.153"
+ version = "0.29.0"
  features = ["dir"]
  default-features = false
 -
@@ -24,18 +26,21 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 -version = "0.4.1"
 -
 -[target."cfg(windows)".dependencies.once_cell]
--version = "1.18.0"
+-version = "1.19.0"
 -optional = true
 -
 -[target."cfg(windows)".dependencies.windows-sys]
--version = "0.48.0"
+-version = "0.52.0"
 -features = [
+-    "Wdk_Foundation",
+-    "Wdk_Storage_FileSystem",
+-    "Wdk_System_SystemServices",
 -    "Win32_Foundation",
--    "Win32_Storage_FileSystem",
--    "Win32_System_SystemServices",
--    "Win32_System_WindowsProgramming",
 -    "Win32_Security",
--    "Win32_System_Kernel",
+-    "Win32_Storage_FileSystem",
 -    "Win32_System_IO",
 -    "Win32_System_Ioctl",
+-    "Win32_System_Kernel",
+-    "Win32_System_SystemServices",
+-    "Win32_System_WindowsProgramming",
 -]
