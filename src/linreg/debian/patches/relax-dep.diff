@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -21,7 +21,7 @@
+ license = "MIT"
+ repository = "https://github.com/49nord/linreg-rs.git"
+ [dependencies.displaydoc]
+-version = "0.1.5"
++version = ">= 0.2.0"
+ default-features = false
+ 
+ [dependencies.num-traits]
