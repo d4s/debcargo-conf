@@ -1,0 +1,40 @@
+From 498274a11b0f71d11f1d71b3b50dc5426238f6c3 Mon Sep 17 00:00:00 2001
+From: Xavier Gillard <xavier.gillard@uclouvain.be>
+Date: Fri, 8 May 2020 12:59:15 +0200
+Subject: [PATCH 06/19] creates directories if needed when saving
+
+---
+ src/page.rs | 17 +++++++++++++----
+ 1 file changed, 13 insertions(+), 4 deletions(-)
+
+diff --git a/src/page.rs b/src/page.rs
+index a12ed7c..1bbdb47 100644
+--- a/src/page.rs
++++ b/src/page.rs
+@@ -100,10 +100,19 @@ impl<'a> Page<'a> {
+     where
+         P: AsRef<Path>,
+     {
+-        match path.as_ref().extension().and_then(OsStr::to_str) {
+-            Some("svg") => svg::save(path, &self.to_svg()?)
+-                .context("saving svg")
+-                .map_err(From::from),
++        let path = path.as_ref();
++        match path.extension().and_then(OsStr::to_str) {
++            Some("svg") => {
++                if let Some(parent) = path.parent() {
++                    if !parent.exists() {
++                        std::fs::create_dir_all(parent)?;
++                    }
++                }
++
++                svg::save(&path, &self.to_svg()?)
++                    .context("saving svg")
++                    .map_err(From::from)
++            },
+             _ => Ok(()),
+         }
+     }
+-- 
+2.47.2
+

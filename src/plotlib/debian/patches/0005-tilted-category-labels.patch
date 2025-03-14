@@ -1,0 +1,47 @@
+From 7098f64b0cc2ebec57752d0d45b39240ba12add8 Mon Sep 17 00:00:00 2001
+From: Xavier Gillard <xavier.gillard@uclouvain.be>
+Date: Fri, 8 May 2020 12:58:45 +0200
+Subject: [PATCH 05/19] tilted category labels
+
+---
+ src/svg_render.rs | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+
+diff --git a/src/svg_render.rs b/src/svg_render.rs
+index 15ec6f9..412f1c7 100644
+--- a/src/svg_render.rs
++++ b/src/svg_render.rs
+@@ -164,19 +164,25 @@ pub fn draw_categorical_x_axis(a: &axis::CategoricalAxis, face_width: f64) -> no
+         ticks.append(tick_mark);
+ 
+         let tick_label = node::element::Text::new()
+-            .set("x", tick_pos)
+-            .set("y", 20)
+             .set("text-anchor", "middle")
+-            .set("font-size", 12)
++            .set("x", 0)
++            .set("y", 0)
++            .set("font-size", 9)
++            .set("transform", "rotate(10)")
+             .add(node::Text::new(tick.to_owned()));
+-        labels.append(tick_label);
++
++        let tick_g = node::element::Group::new()
++            .set("transform", format!("translate({}, {})", tick_pos, 20))
++            .add(tick_label);
++
++        labels.append(tick_g);
+     }
+ 
+     let label = node::element::Text::new()
+         .set("x", face_width / 2.)
+         .set("y", 30)
+         .set("text-anchor", "middle")
+-        .set("font-size", 12)
++        .set("font-size", 9)
+         .add(node::Text::new(a.get_label()));
+ 
+     node::element::Group::new()
+-- 
+2.47.2
+

@@ -1,0 +1,157 @@
+From 57ae1a7f39c8351a155d71c1365f585d21a066d2 Mon Sep 17 00:00:00 2001
+From: Xavier Gillard <xavier.gillard@uclouvain.be>
+Date: Tue, 7 Apr 2020 16:26:15 +0200
+Subject: [PATCH 02/19] display the markers in the svg lengend of scatter plots
+
+---
+ CHANGELOG         |  2 ++
+ src/repr/plot.rs  |  8 ++++-
+ src/svg_render.rs | 81 +++++++++++++++++++++++++----------------------
+ 3 files changed, 53 insertions(+), 38 deletions(-)
+
+diff --git a/CHANGELOG b/CHANGELOG
+index a095456..b996ac8 100644
+--- a/CHANGELOG
++++ b/CHANGELOG
+@@ -1,6 +1,8 @@
+ # Changelog
+ 
+ ## Unreleased
++- Show markers in the line/scatter plots legend.
++- Minor refactor in `svg_render` to factor out the logic to draw point styles.
+ 
+ ## 0.5.1 - 2020-03-28
+ ### Fixed
+diff --git a/src/repr/plot.rs b/src/repr/plot.rs
+index d8af721..a6039c2 100644
+--- a/src/repr/plot.rs
++++ b/src/repr/plot.rs
+@@ -21,6 +21,7 @@ use crate::repr::ContinuousRepresentation;
+ use crate::style::*;
+ use crate::svg_render;
+ use crate::text_render;
++use crate::svg_render::draw_marker;
+ 
+ /// Representation of any plot with points in the XY plane, visualized as points and/or with lines
+ /// in-between.
+@@ -159,7 +160,7 @@ impl ContinuousRepresentation for Plot {
+ 
+             if let Some(ref style) = self.line_style {
+                 let line = node::element::Line::new()
+-                    .set("x1", -10)
++                    .set("x1", -23)
+                     .set("y1", -FONT_SIZE / 2. + 2.)
+                     .set("x2", -3)
+                     .set("y2", -FONT_SIZE / 2. + 2.)
+@@ -168,6 +169,11 @@ impl ContinuousRepresentation for Plot {
+                 group.append(line);
+             }
+ 
++            if let Some(ref style) = self.point_style {
++                let mark = draw_marker(-13., (-FONT_SIZE / 2. + 2.) as f64, style);
++                group.append(mark);
++            }
++
+             group
+         })
+     }
+diff --git a/src/svg_render.rs b/src/svg_render.rs
+index ce6e377..799f9a6 100644
+--- a/src/svg_render.rs
++++ b/src/svg_render.rs
+@@ -199,48 +199,55 @@ pub fn draw_face_points(
+     for &(x, y) in s {
+         let x_pos = value_to_face_offset(x, x_axis, face_width);
+         let y_pos = -value_to_face_offset(y, y_axis, face_height);
+-        let radius = f64::from(style.get_size());
+-        match style.get_marker() {
+-            style::PointMarker::Circle => {
+-                group.append(
+-                    node::element::Circle::new()
+-                        .set("cx", x_pos)
+-                        .set("cy", y_pos)
+-                        .set("r", radius)
+-                        .set("fill", style.get_colour()),
+-                );
+-            }
+-            style::PointMarker::Square => {
+-                group.append(
+-                    node::element::Rectangle::new()
+-                        .set("x", x_pos - radius)
+-                        .set("y", y_pos - radius)
+-                        .set("width", 2. * radius)
+-                        .set("height", 2. * radius)
+-                        .set("fill", style.get_colour()),
+-                );
+-            }
+-            style::PointMarker::Cross => {
+-                let path = node::element::path::Data::new()
+-                    .move_to((x_pos - radius, y_pos - radius))
+-                    .line_by((radius * 2., radius * 2.))
+-                    .move_by((-radius * 2., 0))
+-                    .line_by((radius * 2., -radius * 2.))
+-                    .close();
+-                group.append(
+-                    node::element::Path::new()
+-                        .set("fill", "none")
+-                        .set("stroke", style.get_colour())
+-                        .set("stroke-width", 2)
+-                        .set("d", path),
+-                );
+-            }
+-        };
++        let mark = draw_marker(x_pos, y_pos, style);
++        group.append(mark);
+     }
+ 
+     group
+ }
+ 
++pub fn draw_marker(x_pos: f64, y_pos: f64, style: &style::PointStyle) -> node::element::Group  {
++    let radius = f64::from(style.get_size());
++    let mut group = node::element::Group::new();
++    match style.get_marker() {
++        style::PointMarker::Circle => {
++            group.append(
++                node::element::Circle::new()
++                    .set("cx", x_pos)
++                    .set("cy", y_pos)
++                    .set("r", radius)
++                    .set("fill", style.get_colour()),
++            );
++        }
++        style::PointMarker::Square => {
++            group.append(
++                node::element::Rectangle::new()
++                    .set("x", x_pos - radius)
++                    .set("y", y_pos - radius)
++                    .set("width", 2. * radius)
++                    .set("height", 2. * radius)
++                    .set("fill", style.get_colour()),
++            );
++        }
++        style::PointMarker::Cross => {
++            let path = node::element::path::Data::new()
++                .move_to((x_pos - radius, y_pos - radius))
++                .line_by((radius * 2., radius * 2.))
++                .move_by((-radius * 2., 0))
++                .line_by((radius * 2., -radius * 2.))
++                .close();
++            group.append(
++                node::element::Path::new()
++                    .set("fill", "none")
++                    .set("stroke", style.get_colour())
++                    .set("stroke-width", 2)
++                    .set("d", path),
++            );
++        }
++    };
++    group
++}
++
+ pub fn draw_face_bars(
+     h: &repr::Histogram,
+     x_axis: &axis::ContinuousAxis,
+-- 
+2.47.2
+

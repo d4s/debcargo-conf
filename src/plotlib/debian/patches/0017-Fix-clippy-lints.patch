@@ -1,0 +1,60 @@
+From 744ae1f4996d8bd98ddf2c7e80d9801b03fcc815 Mon Sep 17 00:00:00 2001
+From: Matt Williams <matt@milliams.com>
+Date: Wed, 13 Apr 2022 16:26:26 +0100
+Subject: [PATCH 17/19] Fix clippy lints
+
+---
+ src/errors.rs      | 2 --
+ src/repr/plot.rs   | 2 +-
+ src/style.rs       | 4 ++--
+ src/svg_render.rs  | 2 --
+ src/text_render.rs | 1 -
+ 5 files changed, 3 insertions(+), 8 deletions(-)
+
+--- a/src/errors.rs
++++ b/src/errors.rs
+@@ -1,5 +1,3 @@
+-use thiserror;
+-
+ #[derive(thiserror::Error, Debug)]
+ pub enum Error {
+     #[error("Cannot save page to svg!")]
+--- a/src/repr/plot.rs
++++ b/src/repr/plot.rs
+@@ -197,7 +197,7 @@
+                 y_axis,
+                 face_width,
+                 face_height,
+-                &point_style,
++                point_style,
+             )
+         } else {
+             text_render::empty_face(face_width, face_height)
+--- a/src/style.rs
++++ b/src/style.rs
+@@ -71,7 +71,7 @@
+         self
+     }
+     pub fn get_linejoin(&self) -> LineJoin {
+-        self.linejoin.unwrap_or_else(|| LineJoin::Round)
++        self.linejoin.unwrap_or(LineJoin::Round)
+     }
+ }
+ 
+--- a/src/svg_render.rs
++++ b/src/svg_render.rs
+@@ -1,5 +1,3 @@
+-use std;
+-
+ use svg::node;
+ use svg::Node;
+ 
+--- a/src/text_render.rs
++++ b/src/text_render.rs
+@@ -1,6 +1,5 @@
+ //! A module for plotting graphs
+ 
+-use std;
+ use std::collections::HashMap;
+ 
+ use crate::axis;

@@ -1,0 +1,10 @@
+relax-dep.diff
+0002-display-the-markers-in-the-svg-lengend-of-scatter-pl.patch
+0003-More-point-markers.patch
+0004-smaller-fonts-and-legend-at-the-bottom.patch
+0005-tilted-category-labels.patch
+0006-creates-directories-if-needed-when-saving.patch
+0007-Replace-failure-dependency.patch
+0008-Changelog-note.patch
+0017-Fix-clippy-lints.patch
+update-svg.patch

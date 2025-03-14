@@ -1,0 +1,111 @@
+--- a/src/repr/plot.rs
++++ b/src/repr/plot.rs
+@@ -150,12 +150,11 @@
+             const FONT_SIZE: f32 = 9.0;
+ 
+             // Draw legend text
+-            let legend_text = node::element::Text::new()
++            let legend_text = node::element::Text::new(legend)
+                 .set("x", 0)
+                 .set("y", 0)
+                 .set("text-anchor", "start")
+-                .set("font-size", FONT_SIZE)
+-                .add(node::Text::new(legend));
++                .set("font-size", FONT_SIZE);
+             group.append(legend_text);
+ 
+             if let Some(ref style) = self.line_style {
+--- a/src/svg_render.rs
++++ b/src/svg_render.rs
+@@ -56,21 +56,19 @@
+             .set("stroke-width", 1);
+         ticks.append(tick_mark);
+ 
+-        let tick_label = node::element::Text::new()
++        let tick_label = node::element::Text::new(tick.to_string())
+             .set("x", tick_pos)
+             .set("y", 20)
+             .set("text-anchor", "middle")
+-            .set("font-size", 12)
+-            .add(node::Text::new(tick.to_string()));
++            .set("font-size", 12);
+         labels.append(tick_label);
+     }
+ 
+-    let label = node::element::Text::new()
++    let label = node::element::Text::new(a.get_label())
+         .set("x", face_width / 2.)
+         .set("y", 30)
+         .set("text-anchor", "middle")
+-        .set("font-size", 12)
+-        .add(node::Text::new(a.get_label()));
++        .set("font-size", 12);
+ 
+     node::element::Group::new()
+         .add(ticks)
+@@ -98,13 +96,12 @@
+             .set("stroke-width", 1);
+         ticks.append(tick_mark);
+ 
+-        let tick_label = node::element::Text::new()
++        let tick_label = node::element::Text::new(tick.to_string())
+             .set("x", -15)
+             .set("y", -tick_pos)
+             .set("text-anchor", "end")
+             .set("dominant-baseline", "middle")
+-            .set("font-size", y_tick_font_size)
+-            .add(node::Text::new(tick.to_string()));
++            .set("font-size", y_tick_font_size);
+         labels.append(tick_label);
+     }
+ 
+@@ -118,7 +115,7 @@
+     let x_offset = -(y_tick_font_size * max_tick_length as i32);
+     let y_label_offset = -(face_height / 2.);
+     let y_label_font_size = 12;
+-    let label = node::element::Text::new()
++    let label = node::element::Text::new(a.get_label())
+         .set("x", x_offset)
+         .set("y", y_label_offset - f64::from(y_label_font_size))
+         .set("text-anchor", "middle")
+@@ -126,8 +123,7 @@
+         .set(
+             "transform",
+             format!("rotate(-90 {} {})", x_offset, y_label_offset),
+-        )
+-        .add(node::Text::new(a.get_label()));
++        );
+ 
+     node::element::Group::new()
+         .add(ticks)
+@@ -161,13 +157,12 @@
+             .set("stroke-width", 1);
+         ticks.append(tick_mark);
+ 
+-        let tick_label = node::element::Text::new()
++        let tick_label = node::element::Text::new(tick.to_owned())
+             .set("text-anchor", "middle")
+             .set("x", 0)
+             .set("y", 0)
+             .set("font-size", 9)
+-            .set("transform", "rotate(10)")
+-            .add(node::Text::new(tick.to_owned()));
++            .set("transform", "rotate(10)");
+ 
+         let tick_g = node::element::Group::new()
+             .set("transform", format!("translate({}, {})", tick_pos, 20))
+@@ -176,12 +171,11 @@
+         labels.append(tick_g);
+     }
+ 
+-    let label = node::element::Text::new()
++    let label = node::element::Text::new(a.get_label())
+         .set("x", face_width / 2.)
+         .set("y", 30)
+         .set("text-anchor", "middle")
+-        .set("font-size", 9)
+-        .add(node::Text::new(a.get_label()));
++        .set("font-size", 9);
+ 
+     node::element::Group::new()
+         .add(ticks)

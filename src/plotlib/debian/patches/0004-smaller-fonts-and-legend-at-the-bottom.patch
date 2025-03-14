@@ -1,0 +1,48 @@
+From a9c1d2cbadd36d92bde6c9fe8010fcd189b48969 Mon Sep 17 00:00:00 2001
+From: Xavier Gillard <xavier.gillard@uclouvain.be>
+Date: Wed, 6 May 2020 15:39:58 +0200
+Subject: [PATCH 04/19] smaller fonts and legend at the bottom
+
+---
+ src/repr/plot.rs | 2 +-
+ src/view.rs      | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/repr/plot.rs b/src/repr/plot.rs
+index a6039c2..fd0bcb5 100644
+--- a/src/repr/plot.rs
++++ b/src/repr/plot.rs
+@@ -147,7 +147,7 @@ impl ContinuousRepresentation for Plot {
+             let legend = legend.clone();
+ 
+             let mut group = node::element::Group::new();
+-            const FONT_SIZE: f32 = 12.0;
++            const FONT_SIZE: f32 = 9.0;
+ 
+             // Draw legend text
+             let legend_text = node::element::Text::new()
+diff --git a/src/view.rs b/src/view.rs
+index 125f018..42ab3ca 100644
+--- a/src/view.rs
++++ b/src/view.rs
+@@ -167,7 +167,7 @@ impl View for ContinuousView {
+ 
+         let (x_axis, y_axis) = self.create_axes()?;
+ 
+-        let (legend_x, mut legend_y) = (face_width - 100., -face_height);
++        let (legend_x, mut legend_y) = (face_width - 100., -23.);
+         if let Some(grid) = &self.grid {
+             view_group.append(svg_render::draw_grid(
+                 GridType::Both(grid),
+@@ -186,7 +186,7 @@ impl View for ContinuousView {
+                     "transform",
+                     format!("translate({}, {})", legend_x, legend_y),
+                 ));
+-                legend_y += 18.;
++                legend_y -= 18.;
+             }
+         }
+ 
+-- 
+2.47.2
+
