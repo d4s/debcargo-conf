@@ -1,0 +1,71 @@
+From 578935a5f32b8ad0637254e9b6c6cc6895a2a85b Mon Sep 17 00:00:00 2001
+From: Denis Pynkin <denis.pynkin@collabora.com>
+Date: Sun, 16 Mar 2025 19:23:33 +0100
+Subject: [PATCH] rd-hashd: update pid from 3.0 to 4.0
+
+---
+ Cargo.lock             |  4 ++--
+ rd-hashd/Cargo.toml    |  2 +-
+ rd-hashd/src/bench.rs  | 14 ++++----------
+ rd-hashd/src/hasher.rs | 16 ++++++++++++++--
+ 4 files changed, 21 insertions(+), 15 deletions(-)
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -57,7 +57,7 @@
+ version = "0.4"
+ 
+ [dependencies.pid]
+-version = "3.0"
++version = "4.0"
+ 
+ [dependencies.quantiles]
+ version = "0.7"
+--- a/src/bench.rs
++++ b/src/bench.rs
+@@ -741,16 +741,10 @@
+         params.file_size_mean = (params.file_size_mean as f64 * 1.05) as usize;
+ 
+         let th = self.create_test_hasher(max_size, tf, &params, true);
+-        let mut pid = Pid::new(
+-            cfg.fsz_pid.kp,
+-            cfg.fsz_pid.ki,
+-            cfg.fsz_pid.kd,
+-            1.0,
+-            1.0,
+-            1.0,
+-            1.0,
+-            1.0,
+-        );
++        let mut pid = Pid::new(1.0, 1.0);
++        pid.p(cfg.fsz_pid.kp, 1.0);
++        pid.i(cfg.fsz_pid.ki,1.0);
++        pid.d(cfg.fsz_pid.kd, 1.0);
+ 
+         // determine rps based on latency convergence
+         while nr_rounds < cfg.rounds {
+--- a/src/hasher.rs
++++ b/src/hasher.rs
+@@ -444,8 +444,20 @@
+         );
+ 
+         (
+-            Pid::new(lat.kp, lat.ki, lat.kd, 0.1, 0.1, 0.1, 1.0, 1.0),
+-            Pid::new(rps.kp, rps.ki, rps.kd, 1.0, 1.0, 1.0, 1.0, 1.0),
++            {
++                let mut lat_pid = Pid::new(1.0, 1.0);
++                lat_pid.p(lat.kp, 0.1);
++                lat_pid.i(lat.ki,0.1);
++                lat_pid.d(lat.kd, 0.1);
++                lat_pid
++            },
++            {
++                let mut rps_pid = Pid::new(1.0, 1.0);
++                rps_pid.p(rps.kp, 1.0);
++                rps_pid.i(rps.ki,1.0);
++                rps_pid.d(rps.kd, 1.0);
++                rps_pid
++            }
+         )
+     }
+ 
