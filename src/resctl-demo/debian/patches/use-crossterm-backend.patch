@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -34,7 +34,7 @@
+ 
+ [dependencies.cursive]
+ version = "0.21"
+-features = ["termion-backend"]
++features = ["crossterm-backend"]
+ default-features = false
+ 
+ [dependencies.cursive-tabs]

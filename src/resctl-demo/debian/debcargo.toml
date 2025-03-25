@@ -1,0 +1,37 @@
+overlay = "."
+uploaders = ["Denis Pynkin <denis.pynkin@collabora.com>"]
+
+collapse_features = true
+
+[source]
+section = "rust"
+
+[packages.bin]
+summary = "resctl-demo is a guided resource control demo"
+description = """
+resctl-demo demonstrates and documents various aspects of resource
+control using self-contained workloads in guided scenarios.
+"""
+section = "utils"
+depends = [
+    "rd-agent",
+    "rd-hashd",
+    "gnuplot",
+    "oomd",
+    "gnuplot-nox",
+    "python3-bpfcc",
+    "python3-drgn",
+    "libssl-dev",
+    "libelf-dev",
+    "fio",
+    "build-essential",
+    "wget",
+    "bison",
+    "flex",
+    "pkgconf",
+    "git",
+    "fontconfig",
+    "ghostscript",
+    "imagemagick",
+    "librsvg2-bin",
+]

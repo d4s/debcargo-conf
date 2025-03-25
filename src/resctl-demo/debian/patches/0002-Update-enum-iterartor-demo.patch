@@ -1,0 +1,75 @@
+From f65eedf9017332255ef0a48649664c26b45b9c07 Mon Sep 17 00:00:00 2001
+From: Tejun Heo <tj@kernel.org>
+Date: Thu, 25 Apr 2024 06:43:11 -1000
+Subject: [PATCH] Update enum-iterartor dependency to the latest
+
+---
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -41,7 +41,7 @@
+ version = "0.8"
+ 
+ [dependencies.enum-iterator]
+-version = "0.7"
++version = "^2"
+ 
+ [dependencies.env_logger]
+ version = "0.11"
+--- a/src/doc.rs
++++ b/src/doc.rs
+@@ -4,7 +4,6 @@
+ use cursive::view::{Nameable, Resizable, Scrollable, SizeConstraint, View};
+ use cursive::views::{Button, Checkbox, Dialog, DummyView, LinearLayout, SliderView, TextView};
+ use cursive::Cursive;
+-use enum_iterator::IntoEnumIterator;
+ use log::{error, info, warn};
+ use std::collections::{BTreeMap, BTreeSet, HashSet};
+ use std::sync::{Mutex, RwLock};
+@@ -94,7 +93,7 @@
+ 
+     let mut nr_missing = 0;
+ 
+-    let graph_tags: HashSet<String> = GraphTag::into_enum_iter()
++    let graph_tags: HashSet<String> = enum_iterator::all::<GraphTag>()
+         .map(|x| format!("{:?}", x))
+         .collect();
+     for tag in graphs.iter() {
+@@ -122,7 +121,7 @@
+     let empty_some = Some(StyledString::plain(""));
+ 
+     if tag.starts_with("SysReq::") {
+-        for req in SysReq::into_enum_iter() {
++        for req in enum_iterator::all::<SysReq>() {
+             if format!("{:?}", req) == tag[8..] {
+                 if sysreqs.satisfied.contains(&req) {
+                     return Some(StyledString::styled(tag, *COLOR_ACTIVE));
+@@ -288,7 +287,7 @@
+         },
+         RdCmd::Graph(tag_name) => {
+             if tag_name.len() > 0 {
+-                let tag = GraphTag::into_enum_iter()
++                let tag = enum_iterator::all::<GraphTag>()
+                     .filter(|x| &format!("{:?}", x) == tag_name)
+                     .next()
+                     .unwrap();
+--- a/src/graph.rs
++++ b/src/graph.rs
+@@ -6,7 +6,7 @@
+ use cursive::views::{DummyView, LinearLayout, NamedView, Panel, ResizedView, TextView};
+ use cursive::Cursive;
+ use cursive_tabs::TabView;
+-use enum_iterator::IntoEnumIterator;
++use enum_iterator::Sequence;
+ use log::error;
+ use std::collections::HashMap;
+ use std::fmt;
+@@ -693,7 +693,7 @@
+     }
+ }
+ 
+-#[derive(Copy, Clone, Hash, PartialEq, Eq, Debug, IntoEnumIterator)]
++#[derive(Copy, Clone, Hash, PartialEq, Eq, Debug, Sequence)]
+ pub enum GraphTag {
+     HashdA,
+     HashdB,

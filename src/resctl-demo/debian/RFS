@@ -1,0 +1,7 @@
+Depends:
+ - rd-agent
+ - rd-hashd
+ - rd-agent-intf
+ - rd-hashd-intf
+ - rd-util
+ - cursive-tabs

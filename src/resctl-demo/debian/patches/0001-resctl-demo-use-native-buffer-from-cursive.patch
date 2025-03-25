@@ -1,0 +1,82 @@
+From 41e8a1538ce88ca43ebb13baaf28bc41383aea0f Mon Sep 17 00:00:00 2001
+From: Denis Pynkin <denis.pynkin@collabora.com>
+Date: Tue, 25 Mar 2025 02:31:06 +0100
+Subject: [PATCH] resctl-demo: use native buffer from cursive
+
+Removed `cursive_buffered_backend` dependency as `cursive` v0.21
+includes its own buffered backend implementation.
+Updated `cursive` and `cursive-tabs` to recent versions.
+---
+ resctl-demo/Cargo.toml  |  5 ++---
+ resctl-demo/src/doc.rs  |  2 +-
+ resctl-demo/src/main.rs | 15 +++------------
+ 3 files changed, 6 insertions(+), 16 deletions(-)
+
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -33,15 +33,12 @@
+ version = "0.8"
+ 
+ [dependencies.cursive]
+-version = "^0"
+-features = ["termion"]
++version = "0.21"
++features = ["termion-backend"]
+ default-features = false
+ 
+ [dependencies.cursive-tabs]
+-version = "^0"
+-
+-[dependencies.cursive_buffered_backend]
+-version = "^0"
++version = "0.8"
+ 
+ [dependencies.enum-iterator]
+ version = "0.7"
+--- a/src/doc.rs
++++ b/src/doc.rs
+@@ -623,7 +623,7 @@
+ 
+ fn create_button<F>(prompt: &str, cb: F) -> impl View
+ where
+-    F: 'static + Fn(&mut Cursive),
++    F: 'static + Fn(&mut Cursive) + std::marker::Sync + std::marker::Send,
+ {
+     let trimmed = prompt.trim_start();
+     let indent = &prompt[0..prompt.len() - trimmed.len()];
+--- a/src/main.rs
++++ b/src/main.rs
+@@ -81,7 +81,7 @@
+     static ref LAYOUT: Mutex<Layout> = Mutex::new(Layout::new(Vec2::new(0, 0)));
+     static ref ZOOMED_VIEW: Mutex<Vec<ZoomedView>> = Mutex::new(Vec::new());
+     pub static ref STYLE_ALERT: Style = Style {
+-        effects: Effect::Bold | Effect::Reverse,
++        effects: (Effect::Bold | Effect::Reverse).into(),
+         color: (*COLOR_ALERT).into(),
+     };
+     pub static ref SVC_NAMES: Vec<String> = {
+@@ -531,7 +531,7 @@
+     info!("TEMP_DIR: {:?}", TEMP_DIR.path());
+     touch_units();
+ 
+-    let mut siv = Cursive::default();
++    let mut siv = cursive::default();
+     set_cursive_theme(&mut siv);
+ 
+     let _exit_guard = ExitGuard {};
+@@ -612,14 +612,5 @@
+     refresh_layout_and_kick(&mut siv);
+     update_agent_zoomed_view(&mut siv);
+ 
+-    // Run the event loop. Use the termion backend so that resctl-demo can
+-    // be built without external dependencies. The buffered backend wrapping
+-    // is necessary to avoid flickering, see
+-    // https://github.com/gyscos/cursive/issues/525.
+-    siv.run_with(|| {
+-        let termion_backend = cursive::backends::termion::Backend::init().unwrap();
+-        Box::new(cursive_buffered_backend::BufferedBackend::new(
+-            termion_backend,
+-        ))
+-    })
++    siv.run()
+ }
